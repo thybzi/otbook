@@ -1,0 +1,19 @@
+{% include _top.html %}
+
+<div class="layout-wrapper">
+    {% include header.html type='person' nav_item=page.nav_item %}
+
+    <main class="page-body">
+        {% include page-title.html link_url=page.link_url link_title=page.link_title %}
+        {% include page-text.html %}
+        {% include page-signature.html line1=page.signature_line1 line2=page.signature_line2 %}
+        {% include form-contact.html %}
+    </main>
+
+</div>
+
+{% include footer.html %}
+{% include _bottom.html %}
+
+
+

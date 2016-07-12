@@ -1,0 +1,50 @@
+.page-text {
+    $base-color: $_c__black;
+
+    & {
+        color: $base-color;
+        font-family: $_f__alternate;
+    }
+
+    p,
+    ul {
+
+        & + p,
+        & + ul {
+            margin-top: 1em;
+        }
+    }
+
+    ul {
+        padding-left: 3em;
+
+        li {
+            list-style-type: circle;
+        }
+    }
+    
+    a {
+        text-decoration: underline;
+        text-decoration-color: rgba($base-color, 0.3);
+
+        &:hover {
+            text-decoration-color: $base-color;
+        }
+    }
+
+
+    @media #{$_l__w0-media} {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media #{$_l__w1-media} {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    @media #{$_l__w2-media} {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

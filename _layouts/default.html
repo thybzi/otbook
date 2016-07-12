@@ -1,0 +1,13 @@
+{% include _top.html %}
+
+<div class="layout-wrapper">
+    {% include header.html type=page.header_type nav_item=page.nav_item %}
+
+    <main class="page-body">
+        {{ content }}
+    </main>
+
+</div>
+
+{% include footer.html %}
+{% include _bottom.html %}

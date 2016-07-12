@@ -1,0 +1,5 @@
+{% capture buffer %}
+<li class="{{ include.id }}{% if include.active == include.id %} active{% endif %}">
+    <a href="{{ site.baseurl }}{{ include.url }}">{{ include.title }}</a>
+</li>
+{% endcapture %}{{ buffer | strip_newlines | remove: '    ' }}

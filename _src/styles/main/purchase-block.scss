@@ -1,0 +1,132 @@
+.purchase-block {
+    position: relative;
+    text-align: center;
+    font-family: $_f__common;
+
+    .book-front,
+    .book-back {
+
+        img {
+            vertical-align: top;
+            height: 100%;
+        }
+    }
+
+    .sellers {
+
+        h1 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style-type: none;
+
+                img {
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+
+    @media #{$_l__w0-media} {
+        $book-front-height: 175px;
+
+        & {
+            width: 288px;
+            min-height: $book-front-height;
+            margin-left: auto;
+            margin-top: 2 * $_l__gap-unit;
+            margin-bottom: 5px;
+        }
+
+        .book-front {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: $book-front-height;
+        }
+
+        .book-back {
+            display: none;
+        }
+
+        .sellers {
+            display: table;
+            margin-left: auto;
+
+            h1 {
+                margin-bottom: 2 * $_l__gap-unit;
+            }
+
+            ul li + li {
+                margin-top: 2 * $_l__gap-unit;
+            }
+        }
+    }
+
+    @media #{$_l__w1-media} {
+
+        & {
+            float: right;
+            width: 139px;
+            margin-left: 2 * $_l__gap-unit;
+            margin-bottom: 2 * $_l__gap-unit;
+        }
+
+        .book-front {
+            height: 181px;
+        }
+
+        .book-back {
+            display: none;
+        }
+
+        .sellers {
+            margin-top: 14px;
+
+            h1 {
+                margin-bottom: 28px;
+            }
+
+            ul li + li {
+                margin-top: 3 * $_l__gap-unit;
+            }
+        }
+    }
+
+    @media #{$_l__w2-media} {
+
+        & {
+            float: right;
+            width: 277px;
+            margin-left: 38px;
+            margin-bottom: 38px;
+        }
+
+        .book-front {
+            height: 360px;
+        }
+
+        .book-back {
+            height: 275px;
+        }
+
+        .sellers {
+            margin-top: 36px;
+            margin-bottom: 52px;
+
+            h1 {
+                margin-bottom: 40px;
+            }
+
+            ul li + li {
+                margin-top: 3 * $_l__gap-unit;
+            }
+        }
+    }
+}

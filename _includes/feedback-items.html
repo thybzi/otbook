@@ -1,0 +1,31 @@
+<section class="feedback-items">
+    <div class="items-list">
+    {% for item in site.posts %}
+        <article>
+        {% if item.image %}
+            <img src="{{ site.baseurl }}/files/feedback/{{item.image}}" alt="">
+        {% else %}
+            <img src="{{ site.baseurl }}/assets/images/feedback-items/no-image.png" alt="">
+        {% endif %}
+            <h1>{{ item.title }}</h1>
+
+        {% capture devnull %}
+            {% assign text = item.content | remove:'<p>' | remove:'</p>' | replace:'\n',' ' | strip %}
+            {% assign excerpt = item.excerpt | remove:'<p>' | remove:'</p>' | replace:'\n',' ' | strip %}
+            {% assign text_length = text | size %}
+            {% assign excerpt_length = excerpt | size %}
+            {% assign remain_length = text_length | minus:excerpt_length %}
+        {% endcapture %}
+        {% if remain_length > 0 %}
+            <div class="text collapsed">
+                <span class="excerpt">{{ excerpt }}</span>
+                <span class="remain">{{ text | slice:excerpt_length,remain_length }}</span>
+                <span class="more-link" onclick="this.parentNode.classList.remove('collapsed')">Читать далее</span>
+            </div>
+        {% else %}
+            <div class="text">{{ text }}</div>
+        {% endif %}
+        </article>
+    {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:not(.light) {
+        border-color: $_c__black;
+        background-color: $_c__black;
+        color: $_c__white;
+    }
+
+    &.light {
+        border-color: $_c__gray4;
+        background-color: $_c__white;
+        color: $_c__gray1;
+    }
+}
