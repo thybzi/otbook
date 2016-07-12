@@ -43,6 +43,7 @@
 
     .textarea-block {
         position: relative;
+        text-align: right; // fix for Android browser
 
         textarea {
             width: 100%;
@@ -68,6 +69,7 @@
             height: $line-count * $line-height;
             font-size: $font-size;
             line-height: $line-height;
+            text-align: left;
 
             &:not(.error) {
                 color: $_c__black;

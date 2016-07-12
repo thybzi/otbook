@@ -264,7 +264,8 @@ body {
   .form .inputs-block .file-input {
     width: 100%; }
   .form .textarea-block {
-    position: relative; }
+    position: relative;
+    text-align: right; }
     .form .textarea-block textarea {
       width: 100%; }
       .form .textarea-block textarea:not(.high) {
@@ -278,7 +279,8 @@ body {
       width: 140px;
       height: 40px;
       font-size: 14px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: left; }
       .form .textarea-block .message:not(.error) {
         color: #000; }
       .form .textarea-block .message.error {
