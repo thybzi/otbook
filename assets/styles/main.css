@@ -383,6 +383,7 @@ body {
     left: 0; } }
 
 .header .nav-main {
+  z-index: 10;
   font-size: 0; }
 
 .header .nav-main li {
