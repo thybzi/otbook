@@ -1,16 +1,16 @@
 .page-body {
 
     @media #{$_l__w0-media} {
-        margin-left: $_l__w0-canvas-offset-x;
-        margin-right: $_l__w0-canvas-offset-x;
-        margin-top: 3 * $_l__gap-unit;
+        padding-left: $_l__w0-canvas-offset-x;
+        padding-right: $_l__w0-canvas-offset-x;
+        padding-top: 3 * $_l__gap-unit;
         padding-bottom: 6 * $_l__gap-unit;
     }
 
     @media #{$_l__w1-media} {
-        margin-left: $_l__w1-canvas-offset-x;
-        margin-right: $_l__w1-canvas-offset-x;
-        margin-top: 4 * $_l__gap-unit;
+        padding-left: $_l__w1-canvas-offset-x;
+        padding-right: $_l__w1-canvas-offset-x;
+        padding-top: 4 * $_l__gap-unit;
         padding-bottom: 8 * $_l__gap-unit;
     }
 
@@ -18,7 +18,7 @@
         width: $_l__w2-canvas-width;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5 * $_l__gap-unit;
+        padding-top: 5 * $_l__gap-unit;
         padding-bottom: 116px;
     }
 }
