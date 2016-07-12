@@ -1,12 +1,7 @@
 .feedback-items {
-    $container-offset-x: 20000px;
     $text-color: $_c__gray3;
 
     & {
-        margin-left: -$container-offset-x;
-        margin-right: -$container-offset-x;
-        padding-left: $container-offset-x;
-        padding-right: $container-offset-x;
         background-color: $_c__gray6;
     }
     
@@ -70,12 +65,17 @@
 
 
     @media #{$_l__w0-media} {
+        $container-offset-x: $_l__w0-canvas-offset-x;
         $container-pad-y: 3 * $_l__gap-unit;
         $image-size: 70px;
         $image-offset-x: $_l__gap-unit;
 
         & {
+            margin-left: -$container-offset-x;
+            margin-right: -$container-offset-x;
             margin-top: 44px;
+            padding-left: $container-offset-x;
+            padding-right: $container-offset-x;
             padding-top: $container-pad-y;
             padding-bottom: $container-pad-y;
         }
@@ -100,12 +100,17 @@
     }
 
     @media #{$_l__w1-media} {
+        $container-offset-x: $_l__w1-canvas-offset-x;
         $container-pad-y: 4 * $_l__gap-unit;
         $image-size: 96px;
         $image-offset-x: 2 * $_l__gap-unit;
 
         & {
+            margin-left: -$container-offset-x;
+            margin-right: -$container-offset-x;
             margin-top: 6 * $_l__gap-unit;
+            padding-left: $container-offset-x;
+            padding-right: $container-offset-x;
             padding-top: $container-pad-y;
             padding-bottom: $container-pad-y;
         }
@@ -130,12 +135,17 @@
     }
 
     @media #{$_l__w2-media} {
+        $container-offset-x: 20000px;
         $container-pad-y: 41px;
         $image-size: 96px;
         $image-offset-x: 2 * $_l__gap-unit;
 
         & {
+            margin-left: -$container-offset-x;
+            margin-right: -$container-offset-x;
             margin-top: 7 * $_l__gap-unit;
+            padding-left: $container-offset-x;
+            padding-right: $container-offset-x;
             padding-top: $container-pad-y;
             padding-bottom: $container-pad-y;
         }

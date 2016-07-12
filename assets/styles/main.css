@@ -128,10 +128,6 @@ body {
     color: #232222; }
 
 .feedback-items {
-  margin-left: -20000px;
-  margin-right: -20000px;
-  padding-left: 20000px;
-  padding-right: 20000px;
   background-color: #f9f9f9; }
 
 .feedback-items .items-list {
@@ -169,7 +165,11 @@ body {
 
 @media screen and (max-width: 599px) {
   .feedback-items {
+    margin-left: -8px;
+    margin-right: -8px;
     margin-top: 44px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 24px;
     padding-bottom: 24px; }
   .feedback-items .items-list {
@@ -185,7 +185,11 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .feedback-items {
+    margin-left: -16px;
+    margin-right: -16px;
     margin-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 32px;
     padding-bottom: 32px; }
   .feedback-items .items-list {
@@ -201,7 +205,11 @@ body {
 
 @media screen and (min-width: 960px) {
   .feedback-items {
+    margin-left: -20000px;
+    margin-right: -20000px;
     margin-top: 56px;
+    padding-left: 20000px;
+    padding-right: 20000px;
     padding-top: 41px;
     padding-bottom: 41px; }
   .feedback-items .items-list {
