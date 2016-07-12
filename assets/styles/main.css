@@ -286,8 +286,7 @@ body {
       .form .textarea-block .message.error {
         color: #f00; }
     .form .textarea-block .button {
-      display: table;
-      margin-left: auto; }
+      vertical-align: top; }
   @media screen and (max-width: 599px) {
     .form {
       margin-top: 32px; }
