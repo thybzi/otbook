@@ -303,6 +303,8 @@ body {
       vertical-align: top; }
   @media screen and (max-width: 599px) {
     .form {
+      margin-top: 24px; }
+    .form + .form {
       margin-top: 32px; }
     .form h1 {
       font-size: 20px;
@@ -338,8 +340,10 @@ body {
       margin-bottom: 24px; } }
   @media screen and (min-width: 960px) {
     .form {
-      margin-top: 120px;
+      margin-top: 48px;
       padding-left: 338px; }
+    .form + .form {
+      margin-top: 72px; }
     .form h1 {
       margin-left: -338px;
       font-size: 28px;
