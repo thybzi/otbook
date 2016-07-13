@@ -812,7 +812,7 @@ body {
     .purchase-block {
       width: 288px;
       min-height: 175px;
-      margin-left: auto;
+      margin-right: auto;
       margin-top: 16px;
       margin-bottom: 5px; }
     .purchase-block .book-front {
