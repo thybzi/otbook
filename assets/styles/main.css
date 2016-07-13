@@ -127,6 +127,20 @@ body {
     background-color: #fff;
     color: #232222; }
 
+.download-block {
+  margin-top: 16px;
+  color: #000;
+  font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+.download-block a {
+  opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3); }
+  .download-block a:hover {
+    text-decoration-color: #000; }
+
 .feedback-items {
   background-color: #f9f9f9; }
 

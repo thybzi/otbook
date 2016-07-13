@@ -1,2 +1,3 @@
 exclude: [README.md, gulpfile.js, package.json, node_modules, Gemfile, Gemfile.lock, CNAME]
 baseurl: /otbook
+show_download_block: true
