@@ -1,0 +1,10 @@
+<script>
+    (function() {
+        var form_id = '{{ include.form_id }}',
+                form_elem = document.getElementById(form_id),
+                message_elem = form_elem.querySelector('.message');
+        if (location.hash === ('#' + form_id)) {
+            message_elem.textContent = '{{ include.success_message }}';
+        }
+    })();
+</script>

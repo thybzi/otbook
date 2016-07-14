@@ -1,6 +1,15 @@
-<form class="form" method="post" enctype="multipart/form-data">
+{% capture devnull %}
+    {% assign form_id = 'feedback' %}
+    {% assign communication_type = 'Отзыв о книге' %}
+    {% assign success_message = 'Ваш отзыв отправлен. Спасибо!' %}
+    {% capture form_url %}{% include form/url.html %}{% endcapture %}
+    {% assign form_url = form_url | strip %}
+{% endcapture %}
+<form class="form" id="{{ form_id }}" action="{{ form_url }}" method="post" enctype="multipart/form-data">
     <h1>Оставьте свой отзыв о книге</h1>
     <div class="inputs-block">
+        <input type="hidden" name="type" value="{{ communication_type }}">
+        {% include form/redirect-to.html form_id=form_id %}
         <input class="input" type="text" name="name" placeholder="Ваше имя" required>
         <input class="input" type="email" name="email" placeholder="Ваш email" required>
         <span class="file-input">
@@ -10,7 +19,8 @@
     </div>
     <div class="textarea-block">
         <textarea class="high" name="text" placeholder="Ваше сообщение" required></textarea>
-        <div class="message">Ваш отзыв отправлен. Спасибо!</div>
+        <div class="message"></div>
         <button class="button" type="submit">Отправить</button>
     </div>
+    {% include form/handler.html form_id=form_id success_message=success_message %}
 </form>

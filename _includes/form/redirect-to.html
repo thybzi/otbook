@@ -1,0 +1,8 @@
+{% capture devnull %}
+    {% if site.github.url %}
+        {% assign host_url = site.github.url %}
+    {% else %}
+        {% assign host_url = 'http://localhost:' | append:site.port %}
+    {% endif %}
+    {% assign redirect_url = host_url | append:site.baseurl | append:page.url | append:'#' | append:include.form_id %}
+{% endcapture %}<input type="hidden" name="redirect_to" value="{{ redirect_url }}">

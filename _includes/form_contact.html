@@ -1,12 +1,22 @@
-<form class="form" method="post">
+{% capture devnull %}
+    {% assign form_id = 'contact' %}
+    {% assign communication_type = 'Сообщение' %}
+    {% assign success_message = 'Сообщение отправлено. Спасибо!' %}
+    {% capture form_url %}{% include form/url.html %}{% endcapture %}
+    {% assign form_url = form_url | strip %}
+{% endcapture %}
+<form class="form" id="{{ form_id }}" action="{{ form_url }}" method="post">
     <h1>Напишите мне / Еmail me</h1>
     <div class="inputs-block">
+        <input type="hidden" name="type" value="{{ communication_type }}">
+        {% include form/redirect-to.html form_id=form_id %}
         <input class="input" type="text" name="name" placeholder="Ваше имя / Your name" required>
         <input class="input" type="email" name="email" placeholder="Ваш email / Your email" required>
     </div>
     <div class="textarea-block">
         <textarea name="text" placeholder="Ваше сообщение / Your message" required></textarea>
-        <div class="message error">Пожалуйста, заполните все поля</div>
+        <div class="message"></div>
         <button class="button" type="submit">Отправить</button>
     </div>
+    {% include form/handler.html form_id=form_id success_message=success_message %}
 </form>
