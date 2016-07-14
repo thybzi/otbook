@@ -1,3 +1,4 @@
+{% if site.posts.size > 0 %}
 <section class="feedback-items">
     <div class="items-list">
     {% for item in site.posts %}
@@ -29,3 +30,4 @@
     {% endfor %}
     </div>
 </section>
+{% endif %}
