@@ -4,9 +4,9 @@
         {% unless include.type == 'intro' %}<a class="logo" href="{{ site.baseurl }}/">Олег Туманов</a>{% endunless %}
         <nav class="nav-main">
             <ul>
-                {% include nav-main-item.html url='/' title='Главная / Home page' id='home' active=include.nav_item %}
-                {% include nav-main-item.html url='/author/' title='Об авторе / About the person' id='author' active=include.nav_item %}
-                {% include nav-main-item.html url='/book/' title='Книга / Book' id='book' active=include.nav_item %}
+                {% include header/nav-item.html url='/' title='Главная / Home page' id='home' active=include.nav_item %}
+                {% include header/nav-item.html url='/author/' title='Об авторе / About the person' id='author' active=include.nav_item %}
+                {% include header/nav-item.html url='/book/' title='Книга / Book' id='book' active=include.nav_item %}
                 <li class="music"><a href="http://music.olegtumanov.com/" target="_blank">Музыка / Music</a></li>
             </ul>
             <a href="#" class="toggle" onclick="this.parentNode.classList.toggle('expanded'); return false;"></a>
