@@ -1,7 +1,7 @@
 'use strict';
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    postscss = require('postscss'),
+    postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     watch = require('gulp-watch'),
     copy = require('gulp-copy'),
@@ -22,16 +22,23 @@ var srcDir = '_src/',
 gulp.task('css', ['clean-css'], function () {
     return gulp.src(cssSrcRootFiles)
         .pipe(plumber())
-        .pipe(sass({
-            use: [
-                postscss([
-                    autoprefixer({
-                        cascade: false,
-                        remove: false
-                    })
-                ])
-            ]
-        }))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([
+            autoprefixer({
+                cascade: false,
+                remove: false,
+                browsers: [
+                    'Explorer >= 10',
+                    'Edge >= 12',
+                    'Opera >= 12',
+                    'Firefox >= 22',
+                    'Chrome >= 20',
+                    'Safari >= 6',
+                    'Android >= 4',
+                    'iOS >= 7'
+                ]
+            })
+        ]))
         .pipe(gulp.dest(cssDestDir));
 });
 

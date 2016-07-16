@@ -137,8 +137,12 @@ body {
 .download-block a {
   opacity: 0.8;
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
   text-decoration-color: rgba(0, 0, 0, 0.3); }
   .download-block a:hover {
+    -webkit-text-decoration-color: #000;
+    -moz-text-decoration-color: #000;
     text-decoration-color: #000; }
 
 .footer {
@@ -163,6 +167,7 @@ body {
   .form .input,
   .form textarea {
     display: block;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 8px 12px;
     border: 1px solid #9c9c9c;
@@ -170,6 +175,18 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #000; }
+    .form .input::-webkit-input-placeholder,
+    .form textarea::-webkit-input-placeholder {
+      color: #000;
+      opacity: 0.4; }
+    .form .input::-moz-placeholder,
+    .form textarea::-moz-placeholder {
+      color: #000;
+      opacity: 0.4; }
+    .form .input:-ms-input-placeholder,
+    .form textarea:-ms-input-placeholder {
+      color: #000;
+      opacity: 0.4; }
     .form .input::placeholder,
     .form textarea::placeholder {
       color: #000;
@@ -398,6 +415,8 @@ body {
         right: 0;
         bottom: 0;
         height: 68px;
+        background-image: -webkit-linear-gradient(top, transparent, black);
+        background-image: -o-linear-gradient(top, transparent, black);
         background-image: linear-gradient(to bottom, transparent, black); }
     .header.intro .intro-block {
       margin-top: 282px;
@@ -591,8 +610,12 @@ body {
 
 .page-text a {
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
   text-decoration-color: rgba(0, 0, 0, 0.3); }
   .page-text a:hover {
+    -webkit-text-decoration-color: #000;
+    -moz-text-decoration-color: #000;
     text-decoration-color: #000; }
 
 @media screen and (max-width: 599px) {
@@ -612,9 +635,20 @@ body {
 
 .page-title {
   font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
   .page-title h1 {
     color: #292929;
@@ -698,7 +732,13 @@ body {
 
 @media screen and (min-width: 960px) {
   .page-teasers {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 16px; }
   .page-teasers article {
@@ -790,6 +830,9 @@ body {
   background-color: #f9f9f9; }
 
 .reviews-block .items-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .reviews-block .items-list article {
     position: relative; }
@@ -810,10 +853,14 @@ body {
       line-height: 20px; }
       .reviews-block .items-list article .text .more-link {
         text-decoration: underline;
+        -webkit-text-decoration-color: rgba(71, 71, 71, 0.3);
+        -moz-text-decoration-color: rgba(71, 71, 71, 0.3);
         text-decoration-color: rgba(71, 71, 71, 0.3);
         white-space: nowrap;
         cursor: pointer; }
         .reviews-block .items-list article .text .more-link:hover {
+          -webkit-text-decoration-color: #474747;
+          -moz-text-decoration-color: #474747;
           text-decoration-color: #474747; }
       .reviews-block .items-list article .text.collapsed .excerpt::after {
         content: '…'; }
@@ -832,6 +879,8 @@ body {
     padding-top: 24px;
     padding-bottom: 24px; }
   .reviews-block .items-list {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .reviews-block .items-list article {
       min-height: 70px;
@@ -852,6 +901,8 @@ body {
     padding-top: 32px;
     padding-bottom: 32px; }
   .reviews-block .items-list {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .reviews-block .items-list article {
       min-height: 96px;
@@ -872,6 +923,9 @@ body {
     padding-top: 41px;
     padding-bottom: 41px; }
   .reviews-block .items-list {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
     .reviews-block .items-list article {
       width: 336px;
