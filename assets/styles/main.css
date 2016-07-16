@@ -141,101 +141,6 @@ body {
   .download-block a:hover {
     text-decoration-color: #000; }
 
-.feedback-items {
-  background-color: #f9f9f9; }
-
-.feedback-items .items-list {
-  display: flex; }
-  .feedback-items .items-list article {
-    position: relative; }
-    .feedback-items .items-list article img {
-      position: absolute;
-      left: 0;
-      top: 0; }
-    .feedback-items .items-list article h1 {
-      color: #000;
-      font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 24px; }
-    .feedback-items .items-list article .text {
-      margin-top: 8px;
-      color: #474747;
-      font-size: 14px;
-      line-height: 20px; }
-      .feedback-items .items-list article .text .more-link {
-        text-decoration: underline;
-        text-decoration-color: rgba(71, 71, 71, 0.3);
-        white-space: nowrap;
-        cursor: pointer; }
-        .feedback-items .items-list article .text .more-link:hover {
-          text-decoration-color: #474747; }
-      .feedback-items .items-list article .text.collapsed .excerpt::after {
-        content: '…'; }
-      .feedback-items .items-list article .text.collapsed .remain {
-        display: none; }
-      .feedback-items .items-list article .text:not(.collapsed) .more-link {
-        display: none; }
-
-@media screen and (max-width: 599px) {
-  .feedback-items {
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 44px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 24px;
-    padding-bottom: 24px; }
-  .feedback-items .items-list {
-    flex-wrap: wrap; }
-    .feedback-items .items-list article {
-      min-height: 70px;
-      padding-left: 78px; }
-      .feedback-items .items-list article img {
-        width: 70px;
-        height: 70px; }
-      .feedback-items .items-list article + article {
-        margin-top: 16px; } }
-
-@media screen and (min-width: 600px) and (max-width: 959px) {
-  .feedback-items {
-    margin-left: -16px;
-    margin-right: -16px;
-    margin-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px; }
-  .feedback-items .items-list {
-    flex-wrap: wrap; }
-    .feedback-items .items-list article {
-      min-height: 96px;
-      padding-left: 112px; }
-      .feedback-items .items-list article img {
-        width: 96px;
-        height: 96px; }
-      .feedback-items .items-list article + article {
-        margin-top: 32px; } }
-
-@media screen and (min-width: 960px) {
-  .feedback-items {
-    margin-left: -20000px;
-    margin-right: -20000px;
-    margin-top: 56px;
-    padding-left: 20000px;
-    padding-right: 20000px;
-    padding-top: 41px;
-    padding-bottom: 41px; }
-  .feedback-items .items-list {
-    justify-content: space-between; }
-    .feedback-items .items-list article {
-      width: 336px;
-      min-height: 96px;
-      padding-left: 112px; }
-      .feedback-items .items-list article img {
-        width: 96px;
-        height: 96px; } }
-
 .footer {
   height: 48px;
   background-color: #f9f9f9;
@@ -880,3 +785,98 @@ body {
         margin-bottom: 40px; }
       .purchase-block .sellers ul li + li {
         margin-top: 24px; } }
+
+.reviews-block {
+  background-color: #f9f9f9; }
+
+.reviews-block .items-list {
+  display: flex; }
+  .reviews-block .items-list article {
+    position: relative; }
+    .reviews-block .items-list article img {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .reviews-block .items-list article h1 {
+      color: #000;
+      font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px; }
+    .reviews-block .items-list article .text {
+      margin-top: 8px;
+      color: #474747;
+      font-size: 14px;
+      line-height: 20px; }
+      .reviews-block .items-list article .text .more-link {
+        text-decoration: underline;
+        text-decoration-color: rgba(71, 71, 71, 0.3);
+        white-space: nowrap;
+        cursor: pointer; }
+        .reviews-block .items-list article .text .more-link:hover {
+          text-decoration-color: #474747; }
+      .reviews-block .items-list article .text.collapsed .excerpt::after {
+        content: '…'; }
+      .reviews-block .items-list article .text.collapsed .remain {
+        display: none; }
+      .reviews-block .items-list article .text:not(.collapsed) .more-link {
+        display: none; }
+
+@media screen and (max-width: 599px) {
+  .reviews-block {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 44px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px; }
+  .reviews-block .items-list {
+    flex-wrap: wrap; }
+    .reviews-block .items-list article {
+      min-height: 70px;
+      padding-left: 78px; }
+      .reviews-block .items-list article img {
+        width: 70px;
+        height: 70px; }
+      .reviews-block .items-list article + article {
+        margin-top: 16px; } }
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .reviews-block {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  .reviews-block .items-list {
+    flex-wrap: wrap; }
+    .reviews-block .items-list article {
+      min-height: 96px;
+      padding-left: 112px; }
+      .reviews-block .items-list article img {
+        width: 96px;
+        height: 96px; }
+      .reviews-block .items-list article + article {
+        margin-top: 32px; } }
+
+@media screen and (min-width: 960px) {
+  .reviews-block {
+    margin-left: -20000px;
+    margin-right: -20000px;
+    margin-top: 56px;
+    padding-left: 20000px;
+    padding-right: 20000px;
+    padding-top: 41px;
+    padding-bottom: 41px; }
+  .reviews-block .items-list {
+    justify-content: space-between; }
+    .reviews-block .items-list article {
+      width: 336px;
+      min-height: 96px;
+      padding-left: 112px; }
+      .reviews-block .items-list article img {
+        width: 96px;
+        height: 96px; } }
