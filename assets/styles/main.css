@@ -135,11 +135,12 @@ body {
   line-height: 24px; }
 
 .download-block a {
-  opacity: 0.8;
-  text-decoration: underline;
-  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
-  -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
-  text-decoration-color: rgba(0, 0, 0, 0.3); }
+  opacity: 0.8; }
+  .download-block a {
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+    -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
+    text-decoration-color: rgba(0, 0, 0, 0.3); }
   .download-block a:hover {
     -webkit-text-decoration-color: #000;
     -moz-text-decoration-color: #000;
@@ -613,10 +614,11 @@ body {
   -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
   -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
   text-decoration-color: rgba(0, 0, 0, 0.3); }
-  .page-text a:hover {
-    -webkit-text-decoration-color: #000;
-    -moz-text-decoration-color: #000;
-    text-decoration-color: #000; }
+
+.page-text a:hover {
+  -webkit-text-decoration-color: #000;
+  -moz-text-decoration-color: #000;
+  text-decoration-color: #000; }
 
 @media screen and (max-width: 599px) {
   .page-text {
@@ -852,12 +854,13 @@ body {
       font-size: 14px;
       line-height: 20px; }
       .reviews-block .items-list article .text .more-link {
-        text-decoration: underline;
-        -webkit-text-decoration-color: rgba(71, 71, 71, 0.3);
-        -moz-text-decoration-color: rgba(71, 71, 71, 0.3);
-        text-decoration-color: rgba(71, 71, 71, 0.3);
         white-space: nowrap;
         cursor: pointer; }
+        .reviews-block .items-list article .text .more-link {
+          text-decoration: underline;
+          -webkit-text-decoration-color: rgba(71, 71, 71, 0.3);
+          -moz-text-decoration-color: rgba(71, 71, 71, 0.3);
+          text-decoration-color: rgba(71, 71, 71, 0.3); }
         .reviews-block .items-list article .text .more-link:hover {
           -webkit-text-decoration-color: #474747;
           -moz-text-decoration-color: #474747;

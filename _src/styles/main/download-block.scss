@@ -11,11 +11,6 @@
 
     a {
         opacity: 0.8;
-        text-decoration: underline;
-        text-decoration-color: rgba($text-color, 0.3);
-
-        &:hover {
-            text-decoration-color: $text-color;
-        }
+        @include _t__link-underline-opacity($text-color);
     }
 }

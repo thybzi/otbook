@@ -24,12 +24,7 @@
     }
     
     a {
-        text-decoration: underline;
-        text-decoration-color: rgba($base-color, 0.3);
-
-        &:hover {
-            text-decoration-color: $base-color;
-        }
+        @include _t__link-underline-opacity($base-color);
     }
 
 

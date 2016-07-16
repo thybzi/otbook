@@ -32,14 +32,9 @@
                 line-height: 20px;
 
                 .more-link {
-                    text-decoration: underline;
-                    text-decoration-color: rgba($text-color, 0.3);
+                    @include _t__link-underline-opacity($text-color);
                     white-space: nowrap;
                     cursor: pointer;
-
-                    &:hover {
-                        text-decoration-color: $text-color;
-                    }
                 }
 
                 &.collapsed {

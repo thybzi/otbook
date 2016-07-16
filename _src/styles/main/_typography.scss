@@ -1,0 +1,22 @@
+//**
+//* Create for link underline with variable opacity
+//* @param {color} base-color Base color for link underline
+//* @param {boolean=false} [apply-to-link-text] Apply color not only for underline, but also to link text
+//* @applies-to a Link itself
+//*/
+@mixin _t__link-underline-opacity($color-base, $apply-to-link-text: false) {
+    $underline-opacity-static: 0.3;
+
+    @if ($apply-to-link-text) {
+        color: $color-base;
+    }
+
+    & {
+        text-decoration: underline;
+        text-decoration-color: rgba($color-base, $underline-opacity-static);
+    }
+
+    &:hover {
+        text-decoration-color: $color-base;
+    }
+}
