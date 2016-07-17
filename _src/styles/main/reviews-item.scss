@@ -1,0 +1,96 @@
+$reviews-item__w0-image-size: 70px;
+$reviews-item__w1-image-size: 96px;
+$reviews-item__w2-image-size: $reviews-item__w1-image-size;
+
+.reviews-item {
+
+    .image {
+        position: relative;
+        background-color: $_c__white;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: 1px solid $_c__gray6;
+        }
+
+        @media #{$_l__w0-media} {
+            width: $reviews-item__w0-image-size;
+            height: $reviews-item__w0-image-size;
+        }
+
+        @media #{$_l__w1-media} {
+            width: $reviews-item__w1-image-size;
+            height: $reviews-item__w1-image-size;
+        }
+
+        @media #{$_l__w2-media} {
+            width: $reviews-item__w2-image-size;
+            height: $reviews-item__w2-image-size;
+        }
+    }
+
+    .author {
+        color: $_c__black;
+        font-family: $_f__alternate;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .text {
+        margin-top: $_l__gap-unit;
+
+        .more-link {
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        &.collapsed {
+
+            .excerpt::after {
+                content: '…';
+            }
+
+            .remain {
+                display: none;
+            }
+        }
+
+        &:not(.collapsed) {
+
+            .more-link {
+                display: none;
+            }
+        }
+    }
+}
+
+
+//**
+//* Apply color to text and more-link inside it
+//* @param {color} color
+//* @applies-to .text
+//*/
+@mixin reviews-item__text-color($color) {
+
+    & {
+        color: $color;
+    }
+
+    .more-link {
+        @include _t__link-underline-opacity($color);
+    }
+}
