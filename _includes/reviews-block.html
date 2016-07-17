@@ -3,11 +3,14 @@
     <div class="items-list">
     {% for item in site.posts %}
         <article>
-        {% if item.image %}
-            <img src="{{ site.baseurl }}/files/reviews/{{item.image}}" alt="">
-        {% else %}
-            <img src="{{ site.baseurl }}/assets/images/reviews-block/no-image.png" alt="">
-        {% endif %}
+            <span class="image">
+            {% if item.image %}
+                <img src="{{ site.baseurl }}/files/reviews/{{item.image}}" alt="">
+            {% else %}
+                <img src="{{ site.baseurl }}/assets/images/reviews-block/no-image.png" alt="">
+            {% endif %}
+            </span>
+
             <h1>{{ item.title }}</h1>
 
         {% capture devnull %}
