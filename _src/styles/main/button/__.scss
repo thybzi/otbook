@@ -1,1 +1,16 @@
 @import '../_base/__';
+
+$button__font-size: 17px;
+$button__line-height: 20px;
+$button__pad-x: 20px;
+$button__pad-y: 12px;
+$button__stroke-size: 1px;
+$button__rounding: 6px;
+
+$button__normal-stroke-color: $_c__black;
+$button__normal-bg-color: $_c__black;
+$button__normal-text-color: $_c__white;
+
+$button__light-stroke-color: $_c__gray4;
+$button__light-bg-color: $_c__white;
+$button__light-text-color: $_c__gray1;
