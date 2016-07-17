@@ -161,7 +161,8 @@ body {
   line-height: 16px; }
 
 .form {
-  position: relative; }
+  position: relative;
+  clear: both; }
   .form h1 {
     font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
     color: #292929; }
