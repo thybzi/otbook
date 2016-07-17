@@ -1,4 +1,5 @@
 @import '__';
+@import '../page-title/__';
 
 .purchase-block {
     position: relative;
@@ -115,6 +116,7 @@
             float: right;
             width: 277px;
             margin-left: 38px;
+            margin-top: -($page-title__w2-line-height + $page-title__w2-offset-bottom);
             margin-bottom: 38px;
         }
 
