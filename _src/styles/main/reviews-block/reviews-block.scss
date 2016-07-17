@@ -10,21 +10,21 @@
 
     .items-list {
         display: flex;
+    }
 
-        .reviews-item {
-            position: relative;
+    .reviews-item {
+        position: relative;
 
-            .image {
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
+        .image {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
 
-            .text {
-                @include reviews-item__text-color($text-color);
-                font-size: 14px;
-                line-height: 20px;
-            }
+        .text {
+            @include reviews-item__text-color($text-color);
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 
@@ -39,13 +39,10 @@
 
         .items-list {
             flex-wrap: wrap;
+        }
 
-            .reviews-item {
-
-                & + .reviews-item {
-                    margin-top: 2 * $_l__gap-unit;
-                }
-            }
+        .reviews-item + .reviews-item {
+            margin-top: 2 * $_l__gap-unit;
         }
     }
 
@@ -59,13 +56,10 @@
 
         .items-list {
             flex-wrap: wrap;
+        }
 
-            .reviews-item {
-
-                & + .reviews-item {
-                    margin-top: 4 * $_l__gap-unit;
-                }
-            }
+        .reviews-item  + .reviews-item {
+            margin-top: 4 * $_l__gap-unit;
         }
     }
 
@@ -78,10 +72,10 @@
 
         .items-list {
             justify-content: space-between;
+        }
 
-            .reviews-item {
-                width: 336px;
-            }
+        .reviews-item {
+            width: 336px;
         }
     }
 }
