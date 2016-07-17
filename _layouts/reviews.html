@@ -1,0 +1,20 @@
+{% include _top.html %}
+
+<div class="layout-wrapper">
+    {% include header.html type='book' nav_item=page.nav_item %}
+
+    <main class="page-body">
+        {% include page-title.html %}
+        {% include purchase-block.html dynamic=true %}
+        {% include reviews-list.html %}
+        {% include form_review.html %}
+        {% include form_contact.html %}
+    </main>
+
+</div>
+
+{% include footer.html %}
+{% include _bottom.html %}
+
+
+

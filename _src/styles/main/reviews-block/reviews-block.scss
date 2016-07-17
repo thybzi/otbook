@@ -8,6 +8,14 @@
         background-color: $_c__gray7;
     }
 
+    .block-title {
+        margin-bottom: 4 * $_l__gap-unit;
+        color: $_c__gray2;
+        font-family: $_f__alternate;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .items-list {
         display: flex;
     }
@@ -28,6 +36,16 @@
         }
     }
 
+    .link-wrapper {
+        text-align: right;
+
+        a {
+            font-size: 14px;
+            line-height: 20px;
+            @include _t__link-underline-opacity($text-color);
+        }
+    }
+
 
     @media #{$_l__w0-media} {
         @include reviews-block__block-sizing($_l__w0-canvas-offset-x, 3 * $_l__gap-unit,
@@ -37,12 +55,20 @@
             margin-top: 44px;
         }
 
+        .block-title {
+            display: none;
+        }
+
         .items-list {
             flex-wrap: wrap;
         }
 
         .reviews-item + .reviews-item {
             margin-top: 2 * $_l__gap-unit;
+        }
+
+        .link-wrapper {
+            margin-top: 3 * $_l__gap-unit;
         }
     }
 
@@ -61,6 +87,10 @@
         .reviews-item  + .reviews-item {
             margin-top: 4 * $_l__gap-unit;
         }
+
+        .link-wrapper {
+            margin-top: 3 * $_l__gap-unit;
+        }
     }
 
     @media #{$_l__w2-media} {
@@ -76,6 +106,10 @@
 
         .reviews-item {
             width: 336px;
+        }
+
+        .link-wrapper {
+            margin-top: 4 * $_l__gap-unit;
         }
     }
 }

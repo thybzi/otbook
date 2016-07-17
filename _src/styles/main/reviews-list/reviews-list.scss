@@ -1,0 +1,66 @@
+@import '__';
+@import '../reviews-item/__';
+
+.reviews-list {
+    $text-color: $_c__black;
+
+    .reviews-item {
+        position: relative;
+
+        .text {
+            @include reviews-item__text-color($text-color);
+            font-family: $_f__alternate;
+        }
+    }
+
+
+    @media #{$_l__w0-media} {
+        padding-top: $_l__gap-unit;
+
+        .reviews-item {
+            @include reviews-list__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
+
+            .text {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            & + .reviews-item {
+                margin-top: 4 * $_l__gap-unit;
+            }
+        }
+    }
+
+    @media #{$_l__w1-media} {
+        padding-top: $_l__gap-unit;
+
+        .reviews-item {
+            @include reviews-list__image-position($reviews-item__w1-image-size, 2 * $_l__gap-unit);
+
+            .text {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            & + .reviews-item {
+                margin-top: 6 * $_l__gap-unit;
+            }
+        }
+    }
+
+    @media #{$_l__w2-media} {
+
+        .reviews-item {
+            @include reviews-list__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);
+
+            .text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            & + .reviews-item {
+                margin-top: 8 * $_l__gap-unit;
+            }
+        }
+    }
+}

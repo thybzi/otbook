@@ -1,0 +1,7 @@
+{% if site.posts.size > 0 %}
+<div class="reviews-list">
+{% for item in site.posts limit:limit %}
+    {% include reviews-item.html item=item %}
+{% endfor %}
+</div>
+{% endif %}
