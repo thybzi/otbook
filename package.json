@@ -12,11 +12,13 @@
     "autoprefixer": "^6.3.7",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
-    "gulp-copy": "0.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-watch": "^4.3.8",
+    "postcss-scss": "^0.1.8",
+    "postcss-url": "^5.1.2",
     "stylco": "^0.1.4"
   },
   "repository": {

@@ -1,25 +1,42 @@
 'use strict';
 var gulp = require('gulp'),
+    nodepath = require('path'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
+    scss = require('postcss-scss'),
+    url = require('postcss-url'),
     autoprefixer = require('autoprefixer'),
     watch = require('gulp-watch'),
-    copy = require('gulp-copy'),
+    rename = require('gulp-rename'),
     clean = require('gulp-clean'),
     plumber = require('gulp-plumber');
 
+var OS_SLASH = nodepath.sep,
+    CSS_SLASH = '/';
+
 var srcDir = '_src/',
     destDir = 'assets/',
+    tmpDir = '.tmp/',
     cssSrcDir = srcDir + 'styles/',
-    imgSrcDir = srcDir + 'images/',
+    imgSrcDir = cssSrcDir,
     cssDestDir = destDir + 'styles/',
     imgDestDir = destDir + 'images/',
+    cssTmpDir = tmpDir + 'styles/',
     cssSrcFiles = cssSrcDir + '**/*.scss',
-    cssSrcRootFiles = cssSrcDir + '*.scss',
-    imgSrcFiles = imgSrcDir + '**/*.*',
+    cssSrcRootFiles = cssTmpDir + '*.scss',
+    imgSrcFiles = imgSrcDir + '**/images/*.*',
     buildTasks = ['css', 'img'];
 
-gulp.task('css', ['clean-css'], function () {
+gulp.task('pre-css', function () {
+    return gulp.src(cssSrcFiles)
+        .pipe(plumber())
+        .pipe(postcss([
+            url({url: preCssUrl})
+        ], {syntax: scss}))
+        .pipe(gulp.dest(cssTmpDir));
+});
+
+gulp.task('css', ['pre-css', 'clean-css'], function () {
     return gulp.src(cssSrcRootFiles)
         .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
@@ -44,9 +61,11 @@ gulp.task('css', ['clean-css'], function () {
 
 gulp.task('img', ['clean-img'], function () {
     return gulp.src(imgSrcFiles)
-        .pipe(copy(imgDestDir, {
-            prefix: countSubdirs(imgDestDir)
-        }));
+        .pipe(rename(function (path) {
+            var dirs = path.dirname.split(OS_SLASH);
+            path.dirname = dirs[dirs.length - 2];
+        }))
+        .pipe(gulp.dest(imgDestDir));
 });
 
 gulp.task('clean-img', function () {
@@ -59,16 +78,35 @@ gulp.task('clean-css', function () {
         .pipe(clean());
 });
 
-gulp.task('clean', ['clean-css', 'clean-img']);
+gulp.task('clean', ['clean-css', 'clean-img'], cleanTmpDir);
 
 gulp.task('watch', buildTasks, function () {
     gulp.watch(cssSrcFiles, ['css']);
     gulp.watch(imgSrcFiles, ['img']);
 });
 
-gulp.task('default', buildTasks);
+gulp.task('default', buildTasks, cleanTmpDir);
 
-function countSubdirs(path) {
-    path = path.replace(/\/$/, '') + '/'; // assure trailing slash
-    return (path.match(/\//g) || []).length;
+
+function cleanTmpDir() {
+    return gulp.src(tmpDir, {read: false})
+        .pipe(clean());
+}
+
+function preCssUrl(path, decl, from, dirname) {
+    var dir,
+        component,
+        asset,
+        type = path.split(CSS_SLASH).shift();
+
+    switch (type) {
+        case 'images':
+            dir = nodepath.relative(cssDestDir, imgDestDir).split(OS_SLASH).join(CSS_SLASH);
+            component = dirname.split(OS_SLASH).pop();
+            asset = path.split(CSS_SLASH).slice(1).join(CSS_SLASH);
+            return [dir, component, asset].join(CSS_SLASH);
+
+        default:
+            return path;
+    }
 }

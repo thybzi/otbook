@@ -112,7 +112,7 @@
                 left: 0;
                 width: $icon-area-width;
                 height: $icon-area-height;
-                background: url(../images/header/hamburger.svg) 50% 50% no-repeat;
+                background: url(images/hamburger.svg) 50% 50% no-repeat;
                 background-size: $icon-width $icon-height;
             }
 
@@ -167,7 +167,7 @@
                 top: 0;
                 width: 100%;
                 height: 100%;
-                background: url(../images/header/oleg-tumanov.png) 50% 100% no-repeat;
+                background: url(images/oleg-tumanov.png) 50% 100% no-repeat;
                 background-size: auto 100%;
             }
         }
@@ -246,7 +246,7 @@
     }
 
     &.person {
-        background-image: url(../images/header/oleg-tumanov.png);
+        background-image: url(images/oleg-tumanov.png);
         background-position: 50% 100%;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -273,7 +273,7 @@
         &::after {
             content: '';
             display: block;
-            background: $_c__gray7 url(../images/header/book-open.png) 50% 0 no-repeat;
+            background: $_c__gray7 url(images/book-open.png) 50% 0 no-repeat;
             background-size: auto 100%;
 
             @media #{$_l__w0-media} {

@@ -3,3 +3,4 @@ npm-debug.log
 Gemfile.lock
 _site/
 .jekyll-metadata
+.tmp/
