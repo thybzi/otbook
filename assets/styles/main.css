@@ -780,6 +780,8 @@ body {
       margin-right: auto;
       margin-top: 16px;
       margin-bottom: 16px; }
+    .purchase-block.dynamic {
+      display: none; }
     .purchase-block .book-front {
       position: absolute;
       left: 0;
@@ -800,6 +802,8 @@ body {
       width: 139px;
       margin-left: 16px;
       margin-bottom: 16px; }
+    .purchase-block.dynamic {
+      display: none; }
     .purchase-block .book-front {
       height: 181px; }
     .purchase-block .book-back {
