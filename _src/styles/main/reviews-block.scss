@@ -8,7 +8,7 @@
     .items-list {
         display: flex;
 
-        article {
+        .reviews-item {
             position: relative;
 
             .image {
@@ -98,7 +98,7 @@
         .items-list {
             flex-wrap: wrap;
 
-            article {
+            .reviews-item {
                 min-height: $image-size;
                 padding-left: $image-size + $image-offset-x;
 
@@ -107,7 +107,7 @@
                     height: $image-size;
                 }
 
-                & + article {
+                & + .reviews-item {
                     margin-top: 2 * $_l__gap-unit;
                 }
             }
@@ -133,7 +133,7 @@
         .items-list {
             flex-wrap: wrap;
 
-            article {
+            .reviews-item {
                 min-height: $image-size;
                 padding-left: $image-size + $image-offset-x;
 
@@ -142,7 +142,7 @@
                     height: $image-size;
                 }
 
-                & + article {
+                & + .reviews-item {
                     margin-top: 4 * $_l__gap-unit;
                 }
             }
@@ -168,7 +168,7 @@
         .items-list {
             justify-content: space-between;
 
-            article {
+            .reviews-item {
                 width: 336px;
                 min-height: $image-size;
                 padding-left: $image-size + $image-offset-x;

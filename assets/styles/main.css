@@ -836,20 +836,20 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .reviews-block .items-list article {
+  .reviews-block .items-list .reviews-item {
     position: relative; }
-    .reviews-block .items-list article .image {
+    .reviews-block .items-list .reviews-item .image {
       position: absolute;
       left: 0;
       top: 0;
       background-color: #fff; }
-      .reviews-block .items-list article .image img {
+      .reviews-block .items-list .reviews-item .image img {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%; }
-      .reviews-block .items-list article .image::after {
+      .reviews-block .items-list .reviews-item .image::after {
         content: '';
         position: absolute;
         left: 0;
@@ -857,35 +857,35 @@ body {
         top: 0;
         bottom: 0;
         border: 1px solid #e7e7e7; }
-    .reviews-block .items-list article .author {
+    .reviews-block .items-list .reviews-item .author {
       display: block;
       color: #000;
       font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
       font-weight: bold;
       font-size: 18px;
       line-height: 24px; }
-    .reviews-block .items-list article .text {
+    .reviews-block .items-list .reviews-item .text {
       margin-top: 8px;
       color: #474747;
       font-size: 14px;
       line-height: 20px; }
-      .reviews-block .items-list article .text .more-link {
+      .reviews-block .items-list .reviews-item .text .more-link {
         white-space: nowrap;
         cursor: pointer; }
-        .reviews-block .items-list article .text .more-link {
+        .reviews-block .items-list .reviews-item .text .more-link {
           text-decoration: underline;
           -webkit-text-decoration-color: rgba(71, 71, 71, 0.3);
           -moz-text-decoration-color: rgba(71, 71, 71, 0.3);
           text-decoration-color: rgba(71, 71, 71, 0.3); }
-        .reviews-block .items-list article .text .more-link:hover {
+        .reviews-block .items-list .reviews-item .text .more-link:hover {
           -webkit-text-decoration-color: #474747;
           -moz-text-decoration-color: #474747;
           text-decoration-color: #474747; }
-      .reviews-block .items-list article .text.collapsed .excerpt::after {
+      .reviews-block .items-list .reviews-item .text.collapsed .excerpt::after {
         content: '…'; }
-      .reviews-block .items-list article .text.collapsed .remain {
+      .reviews-block .items-list .reviews-item .text.collapsed .remain {
         display: none; }
-      .reviews-block .items-list article .text:not(.collapsed) .more-link {
+      .reviews-block .items-list .reviews-item .text:not(.collapsed) .more-link {
         display: none; }
 
 @media screen and (max-width: 599px) {
@@ -901,13 +901,13 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .reviews-block .items-list article {
+    .reviews-block .items-list .reviews-item {
       min-height: 70px;
       padding-left: 78px; }
-      .reviews-block .items-list article .image {
+      .reviews-block .items-list .reviews-item .image {
         width: 70px;
         height: 70px; }
-      .reviews-block .items-list article + article {
+      .reviews-block .items-list .reviews-item + .reviews-item {
         margin-top: 16px; } }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -923,13 +923,13 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .reviews-block .items-list article {
+    .reviews-block .items-list .reviews-item {
       min-height: 96px;
       padding-left: 112px; }
-      .reviews-block .items-list article .image {
+      .reviews-block .items-list .reviews-item .image {
         width: 96px;
         height: 96px; }
-      .reviews-block .items-list article + article {
+      .reviews-block .items-list .reviews-item + .reviews-item {
         margin-top: 32px; } }
 
 @media screen and (min-width: 960px) {
@@ -946,10 +946,10 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .reviews-block .items-list article {
+    .reviews-block .items-list .reviews-item {
       width: 336px;
       min-height: 96px;
       padding-left: 112px; }
-      .reviews-block .items-list article .image {
+      .reviews-block .items-list .reviews-item .image {
         width: 96px;
         height: 96px; } }

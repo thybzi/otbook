@@ -2,7 +2,7 @@
 <section class="reviews-block">
     <div class="items-list">
     {% for item in site.posts %}
-        <article>
+        <article class="reviews-item">
             <span class="image">
             {% if item.image %}
                 <img src="{{ site.baseurl }}/files/reviews/{{item.image}}" alt="">
