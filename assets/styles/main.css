@@ -861,58 +861,53 @@ body {
   .reviews-block {
     margin-left: -8px;
     margin-right: -8px;
-    margin-top: 44px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 24px;
-    padding-bottom: 24px; }
+    padding: 24px 8px; }
+  .reviews-block .reviews-item {
+    min-height: 70px;
+    padding-left: 78px; }
+  .reviews-block {
+    margin-top: 44px; }
   .reviews-block .items-list {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .reviews-block .items-list .reviews-item {
-      min-height: 70px;
-      padding-left: 78px; }
-      .reviews-block .items-list .reviews-item + .reviews-item {
-        margin-top: 16px; } }
+    .reviews-block .items-list .reviews-item + .reviews-item {
+      margin-top: 16px; } }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .reviews-block {
     margin-left: -16px;
     margin-right: -16px;
-    margin-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px; }
+    padding: 32px 16px; }
+  .reviews-block .reviews-item {
+    min-height: 96px;
+    padding-left: 112px; }
+  .reviews-block {
+    margin-top: 48px; }
   .reviews-block .items-list {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .reviews-block .items-list .reviews-item {
-      min-height: 96px;
-      padding-left: 112px; }
-      .reviews-block .items-list .reviews-item + .reviews-item {
-        margin-top: 32px; } }
+    .reviews-block .items-list .reviews-item + .reviews-item {
+      margin-top: 32px; } }
 
 @media screen and (min-width: 960px) {
   .reviews-block {
     margin-left: -20000px;
     margin-right: -20000px;
-    margin-top: 56px;
-    padding-left: 20000px;
-    padding-right: 20000px;
-    padding-top: 41px;
-    padding-bottom: 41px; }
+    padding: 41px 20000px; }
+  .reviews-block .reviews-item {
+    min-height: 96px;
+    padding-left: 112px; }
+  .reviews-block {
+    margin-top: 56px; }
   .reviews-block .items-list {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .reviews-block .items-list .reviews-item {
-      width: 336px;
-      min-height: 96px;
-      padding-left: 112px; } }
+      width: 336px; } }
 
 .reviews-item .image {
   position: relative;

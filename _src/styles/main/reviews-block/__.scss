@@ -1,1 +1,23 @@
 @import '../_base/__';
+
+//**
+//* Apply block offsets and sizing
+//* @param {length} container-offset-x
+//* @param {length} container-pad-x
+//* @param {length} image-size
+//* @param {length} image-offset-right
+//* @applies-to .reviews-block
+//*/
+@mixin reviews-block__block-sizing($container-offset-x, $container-pad-y, $image-size, $image-offset-right) {
+
+    & {
+        margin-left: -$container-offset-x;
+        margin-right: -$container-offset-x;
+        padding: $container-pad-y $container-offset-x;
+    }
+
+    .reviews-item {
+        min-height: $image-size;
+        padding-left: $image-size + $image-offset-right;
+    }
+}

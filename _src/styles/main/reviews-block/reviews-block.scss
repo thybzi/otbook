@@ -30,27 +30,17 @@
 
 
     @media #{$_l__w0-media} {
-        $container-offset-x: $_l__w0-canvas-offset-x;
-        $container-pad-y: 3 * $_l__gap-unit;
-        $image-size: $reviews-item__w0-image-size;
-        $image-offset-x: $_l__gap-unit;
+        @include reviews-block__block-sizing($_l__w0-canvas-offset-x, 3 * $_l__gap-unit,
+            $reviews-item__w0-image-size, $_l__gap-unit);
 
         & {
-            margin-left: -$container-offset-x;
-            margin-right: -$container-offset-x;
             margin-top: 44px;
-            padding-left: $container-offset-x;
-            padding-right: $container-offset-x;
-            padding-top: $container-pad-y;
-            padding-bottom: $container-pad-y;
         }
 
         .items-list {
             flex-wrap: wrap;
 
             .reviews-item {
-                min-height: $image-size;
-                padding-left: $image-size + $image-offset-x;
 
                 & + .reviews-item {
                     margin-top: 2 * $_l__gap-unit;
@@ -60,27 +50,17 @@
     }
 
     @media #{$_l__w1-media} {
-        $container-offset-x: $_l__w1-canvas-offset-x;
-        $container-pad-y: 4 * $_l__gap-unit;
-        $image-size: $reviews-item__w1-image-size;
-        $image-offset-x: 2 * $_l__gap-unit;
+        @include reviews-block__block-sizing($_l__w1-canvas-offset-x, 4 * $_l__gap-unit,
+            $reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
         & {
-            margin-left: -$container-offset-x;
-            margin-right: -$container-offset-x;
             margin-top: 6 * $_l__gap-unit;
-            padding-left: $container-offset-x;
-            padding-right: $container-offset-x;
-            padding-top: $container-pad-y;
-            padding-bottom: $container-pad-y;
         }
 
         .items-list {
             flex-wrap: wrap;
 
             .reviews-item {
-                min-height: $image-size;
-                padding-left: $image-size + $image-offset-x;
 
                 & + .reviews-item {
                     margin-top: 4 * $_l__gap-unit;
@@ -90,19 +70,10 @@
     }
 
     @media #{$_l__w2-media} {
-        $container-offset-x: 20000px;
-        $container-pad-y: 41px;
-        $image-size: $reviews-item__w1-image-size;
-        $image-offset-x: 2 * $_l__gap-unit;
+        @include reviews-block__block-sizing($ultra-length, 41px, $reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
         & {
-            margin-left: -$container-offset-x;
-            margin-right: -$container-offset-x;
             margin-top: 7 * $_l__gap-unit;
-            padding-left: $container-offset-x;
-            padding-right: $container-offset-x;
-            padding-top: $container-pad-y;
-            padding-bottom: $container-pad-y;
         }
 
         .items-list {
@@ -110,8 +81,6 @@
 
             .reviews-item {
                 width: 336px;
-                min-height: $image-size;
-                padding-left: $image-size + $image-offset-x;
             }
         }
     }
