@@ -1,5 +1,13 @@
 {% capture devnull %}
     {% assign item = include.item %}
+    {% assign image_exts = 'png|jpg|gif' | split:'|' %}
+    {% if image_exts contains item.image %}
+        {% assign image = item.id | replace_first:'/' | append:'.' | append:item.image %}
+    {% elsif item.image %}
+        {% assign image = item.image %}
+    {% else %}
+        {% assign image = nil %}
+    {% endif %}
     {% assign text = item.content | remove:'<p>' | remove:'</p>' | replace:'\n',' ' | strip %}
     {% assign excerpt = item.excerpt | remove:'<p>' | remove:'</p>' | replace:'\n',' ' | strip %}
     {% assign text_length = text | size %}
@@ -8,8 +16,8 @@
 {% endcapture %}
 <article class="reviews-item">
     <span class="image">
-    {% if item.image %}
-        <img src="{{ site.baseurl }}/files/reviews/{{item.image}}" alt="">
+    {% if image %}
+        <img src="{{ site.baseurl }}/files/reviews/{{image}}" alt="">
     {% endif %}
     </span>
 
