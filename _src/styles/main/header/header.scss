@@ -1,0 +1,292 @@
+@import '__';
+
+.header {
+
+    & {
+        background-color: $_c__black;
+    }
+
+    .header-inner {
+        position: relative;
+        //height: $_l__header-height-base;
+
+        @media #{$_l__w0-media} {
+            margin-left: $_l__w0-header-pad-x;
+            margin-right: $_l__w0-header-pad-x;
+        }
+
+        @media #{$_l__w1-media} {
+            margin-left: $_l__w1-header-pad-x;
+            margin-right: $_l__w1-header-pad-x;
+        }
+
+        @media #{$_l__w2-media} {
+            width: $_l__w2-canvas-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .logo {
+        $logo-height: 20px;
+
+        & {
+            position: absolute;
+            top: floor(($_l__header-height-base - $logo-height) / 2) - 2px; // визуальное выравнивание
+            height: $logo-height;
+            color: $_c__white;
+            font-weight: bold;
+            font-family: $_f__alternate;
+            line-height: $logo-height;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media #{$_l__w0-media} {
+            font-size: 16px;
+            right: 0;
+        }
+
+        @media #{$_l__w1-w2-media} {
+            font-size: 18px;
+            left: 0;
+        }
+    }
+
+    .nav-main {
+        $item-font-size: 14px;
+        $item-line-height: 16px;
+        $item-line-count: 1;
+        $item-height: $item-line-count * $item-line-height;
+
+        & {
+            z-index: 10;
+            font-size: 0;
+        }
+
+        li {
+            height: $item-line-height;
+            color: $_c__white;
+            opacity: 0.8;
+            font-size: $item-font-size;
+            line-height: $item-line-height;
+            white-space: nowrap;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @media #{$_l__w0-media} {
+            $icon-area-width: 30px;
+            $icon-area-height: 29px;
+            $icon-width: 22px;
+            $icon-height: 16px;
+
+            & {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+            }
+
+            ul {
+                position: absolute;
+                top: 0;
+                left: -$_l__w0-header-pad-x;
+                right: -$_l__w0-header-pad-x;
+                background-color: rgba($_c__black, 0.9);
+                padding: (2 * $_l__gap-unit) (6 * $_l__gap-unit) (3 * $_l__gap-unit);
+                text-align: center;
+            }
+
+            li + li {
+                margin-top: 3 * $_l__gap-unit;
+            }
+
+            .toggle {
+                position: absolute;
+                top: floor(($_l__header-height-base - $icon-area-height) / 2);
+                left: 0;
+                width: $icon-area-width;
+                height: $icon-area-height;
+                background: url(../images/header/hamburger.svg) 50% 50% no-repeat;
+                background-size: $icon-width $icon-height;
+            }
+
+            &:not(.expanded) ul {
+                display: none;
+            }
+        }
+
+        @media #{$_l__w1-w2-media} {
+
+            & {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: $_l__header-height-base;
+                margin-top: floor(($_l__header-height-base - $item-height) / 2);
+            }
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+
+                & + li {
+                    margin-left: 3 * $_l__gap-unit;
+                }
+
+                &.home,
+                &.active {
+                    display: none;
+                }
+            }
+
+            .toggle {
+                display: none;
+            }
+        }
+    }
+
+
+    &.intro {
+
+        .background {
+            position: absolute;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../images/header/oleg-tumanov.png) 50% 100% no-repeat;
+                background-size: auto 100%;
+            }
+        }
+
+
+        // @todo mixin
+        .header-inner::before {
+            content: '';
+            display: block;
+            height: 1px;
+            margin-bottom: -1px;
+        }
+
+        @media #{$_l__w0-media} {
+            min-height: 274px;
+            padding-bottom: 4 * $_l__gap-unit;
+
+            .background {
+                min-width: $_l__w0-min;
+                height: 274px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 68px;
+                    background-image: linear-gradient(to bottom, rgba($_c__black, 0), rgba($_c__black, 1));
+                }
+            }
+
+            .intro-block {
+                margin-top: 274px + $_l__gap-unit;
+                margin-left: $_l__gap-unit;
+                margin-right: $_l__gap-unit;
+            }
+        }
+
+        @media #{$_l__w1-media} {
+            min-height: 384px;
+
+            .background {
+                height: 384px;
+
+                &::before {
+                    margin-left: -224px;
+                }
+            }
+
+            .intro-block {
+                margin-top: 142px;
+                margin-left: auto;
+                margin-right: $_l__gap-unit;
+            }
+        }
+
+        @media #{$_l__w2-media} {
+            min-height: 575px;
+
+            .background {
+                top: 20px;
+                height: 555px;
+
+                &::before {
+                    margin-left: -260px;
+                }
+            }
+
+            .intro-block {
+                margin-top: 176px;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &.person {
+        background-image: url(../images/header/oleg-tumanov.png);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+
+        @media #{$_l__w0-media} {
+            height: 176px;
+        }
+
+        @media #{$_l__w1-media} {
+            height: 208px;
+        }
+
+        @media #{$_l__w2-media} {
+            height: 352px;
+        }
+    }
+
+    &.book {
+
+        .header-inner {
+            padding-bottom: $_l__header-height-base;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            background: $_c__gray7 url(../images/header/book-open.png) 50% 0 no-repeat;
+            background-size: auto 100%;
+
+            @media #{$_l__w0-media} {
+                height: 57px;
+            }
+
+            @media #{$_l__w1-media} {
+                height: 112px;
+            }
+
+            @media #{$_l__w2-media} {
+                height: 192px;
+            }
+        }
+    }
+}

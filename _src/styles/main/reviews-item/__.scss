@@ -1,0 +1,22 @@
+@import '../_base/__';
+
+$reviews-item__w0-image-size: 70px;
+$reviews-item__w1-image-size: 96px;
+$reviews-item__w2-image-size: $reviews-item__w1-image-size;
+
+
+//**
+//* Apply color to text and more-link inside it
+//* @param {color} color
+//* @applies-to .text
+//*/
+@mixin reviews-item__text-color($color) {
+
+    & {
+        color: $color;
+    }
+
+    .more-link {
+        @include _t__link-underline-opacity($color);
+    }
+}

@@ -1,0 +1,134 @@
+@import '__';
+
+.page-teasers {
+
+    article {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        h1 {
+            color: $_c__gray2;
+            font-family: $_f__alternate;
+        }
+
+        div {
+            color: $_c__gray3;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .button {
+            display: table;
+        }
+    }
+
+
+    @media #{$_l__w0-media} {
+        $image-width: 70px;
+        $image-offset-right: $_l__gap-unit;
+        $image-space-x: $image-width + $image-offset-right;
+
+        & {
+            padding-top: $_l__gap-unit;
+        }
+
+        article {
+            padding-left: $image-space-x;
+
+            img {
+                width: $image-width;
+            }
+
+            h1 {
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            div {
+                margin-top: $_l__gap-unit;
+            }
+
+            .button {
+                margin-top: 3 * $_l__gap-unit;
+            }
+
+            & + article {
+                margin-top: 44px;
+            }
+        }
+    }
+
+    @media #{$_l__w1-media} {
+        $image-width: 160px;
+        $image-offset-right: 2 * $_l__gap-unit;
+        $image-space-x: $image-width + $image-offset-right;
+
+        & {
+            padding-top: 2 * $_l__gap-unit;
+        }
+
+        article {
+            padding-left: $image-space-x;
+
+            img {
+                width: $image-width;
+            }
+
+            h1 {
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            div {
+                margin-top: $_l__gap-unit;
+            }
+
+            .button {
+                margin-top: 2 * $_l__gap-unit;
+            }
+
+            & + article {
+                margin-top: 72px;
+            }
+        }
+    }
+
+    @media #{$_l__w2-media} {
+        $image-width: 160px;
+        $image-offset-right: 2 * $_l__gap-unit;
+        $image-space-x: $image-width + $image-offset-right;
+
+        & {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2 * $_l__gap-unit;
+        }
+
+        article {
+            padding-left: $image-space-x;
+            width: 272px;
+
+            img {
+                width: $image-width;
+            }
+
+            h1 {
+                font-size: 44px;
+                line-height: 48px;
+            }
+
+            div {
+                margin-top: 2 * $_l__gap-unit;
+            }
+
+            .button {
+                margin-top: 20px;
+            }
+        }
+    }
+}

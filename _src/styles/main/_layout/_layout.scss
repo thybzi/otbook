@@ -1,0 +1,20 @@
+@import '__';
+
+html,
+body {
+    height: 100%;
+}
+
+.layout-wrapper {
+    min-width: $_l__w0-min;
+    min-height: 100%;
+    overflow-x: hidden;
+    margin-bottom: -$_l__footer-height;
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+        height: $_l__footer-height;
+    }
+}

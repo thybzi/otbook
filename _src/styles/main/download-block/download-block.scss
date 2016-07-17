@@ -1,0 +1,18 @@
+@import '__';
+
+.download-block {
+    $text-color: $_c__black;
+
+    & {
+        margin-top: 2 * $_l__gap-unit;
+        color: $text-color;
+        font-family: $_f__alternate;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    a {
+        opacity: 0.8;
+        @include _t__link-underline-opacity($text-color);
+    }
+}

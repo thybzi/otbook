@@ -1,0 +1,118 @@
+@import '__';
+
+.intro-block {
+
+    h1 {
+        color: $_c__white;
+        font-family: $_f__alternate;
+    }
+
+    article {
+        color: $_c__gray4;
+        opacity: 0.8;
+
+        q {
+
+            &::before {
+                content: '«';
+            }
+
+            &::after {
+                content: '»';
+            }
+        }
+
+        a {
+            color: $_c__gray5;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+    }
+
+
+    @media #{$_l__w0-media} {
+
+        h1 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 2 * $_l__gap-unit;
+        }
+
+        article {
+            font-size: 13px;
+            line-height: 18px;
+
+            & + article {
+                margin-top: 2 * $_l__gap-unit;
+            }
+        }
+    }
+
+    @media #{$_l__w1-media} {
+        $article-count: 2;
+        $article-width: 190px;
+        $article-gap-x: 2 * $_l__gap-unit;
+
+        & {
+            width: ($article-count * $article-width) + (($article-count - 1) * $article-gap-x);
+        }
+
+        // @todo mixin
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 64px;
+            margin-bottom: 2 * $_l__gap-unit;
+        }
+
+        article {
+            float: left;
+            width: $article-width;
+            font-size: 14px;
+            line-height: 18px;
+
+            & + article {
+                margin-left: $article-gap-x;
+            }
+        }
+    }
+
+    @media #{$_l__w2-media} {
+        $article-count: 2;
+        $article-width: 209px;
+        $article-gap-x: 4 * $_l__gap-unit;
+
+        & {
+            width: ($article-count * $article-width) + (($article-count - 1) * $article-gap-x);
+        }
+
+        // @todo mixin
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        h1 {
+            font-size: 60px;
+            line-height: 64px;
+            margin-bottom: 4 * $_l__gap-unit;
+        }
+
+        article {
+            float: left;
+            width: $article-width;
+            font-size: 16px;
+            line-height: 20px;
+
+            & + article {
+                margin-left: $article-gap-x;
+            }
+        }
+    }
+}

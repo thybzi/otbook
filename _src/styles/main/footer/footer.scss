@@ -1,0 +1,26 @@
+@import '__';
+
+.footer {
+    $copyright-font-size: 14px;
+    $copyright-line-height: 16px;
+    $copyright-line-count: 1;
+    $text-height: $copyright-line-height * $copyright-line-count;
+    $block-height: $_l__footer-height;
+    $block-pad-top: floor(($block-height - $text-height) / 2);
+
+    & {
+        height: $block-height;
+        background-color: $_c__gray7;
+        text-align: center;
+    }
+
+    .copyright {
+        display: block;
+        height: $text-height;
+        padding-top: $block-pad-top;
+        color: $_c__black;
+        opacity: 0.8;
+        font-size: $copyright-font-size;
+        line-height: $copyright-line-height;
+    }
+}
