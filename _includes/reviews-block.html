@@ -9,7 +9,7 @@
             {% endif %}
             </span>
 
-            <h1>{{ item.title }}</h1>
+            <cite class="author">{{ item.title }}</cite>
 
         {% capture devnull %}
             {% assign text = item.content | remove:'<p>' | remove:'</p>' | replace:'\n',' ' | strip %}

@@ -857,7 +857,8 @@ body {
         top: 0;
         bottom: 0;
         border: 1px solid #e7e7e7; }
-    .reviews-block .items-list article h1 {
+    .reviews-block .items-list article .author {
+      display: block;
       color: #000;
       font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
       font-weight: bold;
