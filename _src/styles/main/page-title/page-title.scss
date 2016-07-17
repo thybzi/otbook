@@ -23,29 +23,29 @@
     }
 
     @media #{$_l__w0-media} {
-        margin-bottom: 2 * $_l__gap-unit;
+        margin-bottom: $page-title__w0-offset-bottom;
 
         h1 {
-            font-size: 28px;
-            line-height: 32px;
+            font-size: $page-title__w0-font-size;
+            line-height: $page-title__w0-line-height;
         }
     }
 
     @media #{$_l__w1-media} {
-        margin-bottom: 2 * $_l__gap-unit;
+        margin-bottom: $page-title__w1-offset-bottom;
 
         h1 {
-            font-size: 36px;
-            line-height: 48px;
+            font-size: $page-title__w1-font-size;
+            line-height: $page-title__w1-line-height;
         }
     }
 
     @media #{$_l__w2-media} {
-        margin-bottom: 4 * $_l__gap-unit;
+        margin-bottom: $page-title__w2-offset-bottom;
 
         h1 {
-            font-size: 44px;
-            line-height: 48px;
+            font-size: $page-title__w2-font-size;
+            line-height: $page-title__w2-line-height;
         }
     }
 }
