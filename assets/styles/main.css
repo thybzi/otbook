@@ -198,6 +198,31 @@ body {
     .form .file-input input[type=file] {
       position: absolute;
       opacity: 0; }
+      .form .file-input input[type=file]:focus + .button {
+        text-decoration: underline; }
+    .form .file-input .button {
+      position: relative;
+      vertical-align: middle; }
+    .form .file-input.selected::after {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 20px;
+      margin-left: 8px;
+      vertical-align: middle;
+      background: url(../images/form/check.svg) 0 0 no-repeat;
+      background-size: auto 100%; }
+    .form .file-input.selected .button {
+      color: transparent;
+      font-size: 0; }
+      .form .file-input.selected .button::after {
+        content: 'Выбрать другое';
+        display: inline;
+        vertical-align: top;
+        color: #232222;
+        font-size: 17px; }
+      .form .file-input.selected .button:hover::after {
+        text-decoration: underline; }
   .form .inputs-block .input,
   .form .inputs-block .file-input {
     width: 100%; }

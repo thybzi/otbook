@@ -13,7 +13,7 @@
         <input class="input" type="text" name="name" placeholder="Ваше имя" required>
         <input class="input" type="email" name="email" placeholder="Ваш email" required>
         <span class="file-input">
-            <input type="file" name="photo" id="photo">
+            <input type="file" name="photo" id="photo" onchange="this.parentNode.classList[this.value ? 'add' : 'remove']('selected')">
             <label class="button light" for="photo">Добавить фото</label>
         </span>
     </div>

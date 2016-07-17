@@ -1,4 +1,5 @@
 @import '__';
+@import '../button/__';
 
 .form {
     position: relative;
@@ -32,6 +33,46 @@
         input[type=file] {
             position: absolute;
             opacity: 0;
+
+            &:focus + .button {
+                text-decoration: underline;
+            }
+        }
+
+        .button {
+            position: relative;
+            vertical-align: middle;
+        }
+
+        &.selected {
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 20px;
+                margin-left: $_l__gap-unit;
+                vertical-align: middle;
+                background: url(images/check.svg) 0 0 no-repeat;
+                background-size: auto 100%;
+            }
+
+            .button {
+                color: transparent;
+                font-size: 0;
+
+                &::after {
+                    content: 'Выбрать другое';
+                    display: inline;
+                    vertical-align: top;
+                    color: $button__light-text-color;
+                    font-size: $button__font-size;
+                }
+
+                &:hover::after {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
