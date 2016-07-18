@@ -324,8 +324,8 @@ body {
       margin-right: 16px; } }
   @media screen and (min-width: 600px) and (max-width: 959px) {
     .header .header-inner {
-      margin-left: 16px;
-      margin-right: 16px; } }
+      margin-left: 24px;
+      margin-right: 24px; } }
   @media screen and (min-width: 960px) {
     .header .header-inner {
       width: 928px;
@@ -587,8 +587,8 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .page-body {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 32px;
     padding-bottom: 64px; } }
 
@@ -939,9 +939,9 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .reviews-block {
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 32px 16px; }
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 32px 24px; }
   .reviews-block .reviews-item {
     min-height: 96px;
     padding-left: 112px; }
