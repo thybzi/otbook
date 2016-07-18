@@ -6,6 +6,38 @@ $reviews-item__w2-image-size: $reviews-item__w1-image-size;
 
 
 //**
+//* Apply sizing and other styles for image occupying separate column or flowing text around it
+//* @param {length} image-size Width and height of image
+//* @param {length} image-offset-right Right offset of image
+//* @param {boolean=true} is-column If true, image occupies entire column. If false, text flows left around the image.
+//* @applies-to .reviews-item
+//*/
+@mixin reviews-item__image-position($image-size, $image-offset-right, $is-column: true) {
+
+    & {
+        min-height: $image-size;
+    }
+
+    @if $is-column {
+        padding-left: $image-size + $image-offset-right;
+
+        .image {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    @else {
+
+        .image {
+            position: relative;
+            float: left;
+            margin-right: $image-offset-right;
+        }
+    }
+}
+
+//**
 //* Apply color to text and more-link inside it
 //* @param {color} color
 //* @applies-to .text

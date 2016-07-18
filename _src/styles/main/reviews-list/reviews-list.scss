@@ -20,7 +20,7 @@
         padding-top: $_l__gap-unit;
 
         .reviews-item {
-            @include reviews-list__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
+            @include reviews-item__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
 
             .text {
                 font-size: $page-text__w0-font-size;
@@ -38,7 +38,7 @@
         padding-top: $_l__gap-unit;
 
         .reviews-item {
-            @include reviews-list__image-position($reviews-item__w1-image-size, 2 * $_l__gap-unit);
+            @include reviews-item__image-position($reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
             .text {
                 font-size: $page-text__w1-font-size;
@@ -55,7 +55,7 @@
         margin-bottom: 12 * $_l__gap-unit;
 
         .reviews-item {
-            @include reviews-list__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);
+            @include reviews-item__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);
 
             .text {
                 font-size: $page-text__w2-font-size;

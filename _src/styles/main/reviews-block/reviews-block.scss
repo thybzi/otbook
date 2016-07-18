@@ -23,12 +23,6 @@
     .reviews-item {
         position: relative;
 
-        .image {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
         .text {
             @include reviews-item__text-color($text-color);
             font-size: 14px;
@@ -48,11 +42,10 @@
 
 
     @media #{$_l__w0-media} {
-        @include reviews-block__block-sizing($_l__w0-canvas-offset-x, 3 * $_l__gap-unit,
-            $reviews-item__w0-image-size, $_l__gap-unit);
 
         & {
             margin-top: 44px;
+            @include reviews-block__block-sizing($_l__w0-canvas-offset-x, 3 * $_l__gap-unit, 2 * $_l__gap-unit);
         }
 
         .block-title {
@@ -63,8 +56,8 @@
             flex-wrap: wrap;
         }
 
-        .reviews-item + .reviews-item {
-            margin-top: 2 * $_l__gap-unit;
+        .reviews-item {
+            @include reviews-item__image-position($reviews-item__w0-image-size, $_l__gap-unit);
         }
 
         .link-wrapper {
@@ -73,19 +66,18 @@
     }
 
     @media #{$_l__w1-media} {
-        @include reviews-block__block-sizing($_l__w1-canvas-offset-x, 4 * $_l__gap-unit,
-            $reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
         & {
             margin-top: 6 * $_l__gap-unit;
+            @include reviews-block__block-sizing($_l__w1-canvas-offset-x, 4 * $_l__gap-unit, 4 * $_l__gap-unit);
         }
 
         .items-list {
             flex-wrap: wrap;
         }
 
-        .reviews-item  + .reviews-item {
-            margin-top: 4 * $_l__gap-unit;
+        .reviews-item  {
+            @include reviews-item__image-position($reviews-item__w1-image-size, 2 * $_l__gap-unit);
         }
 
         .link-wrapper {
@@ -94,9 +86,9 @@
     }
 
     @media #{$_l__w2-media} {
-        @include reviews-block__block-sizing($ultra-length, 41px, $reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
         & {
+            @include reviews-block__block-sizing($ultra-length, 41px);
             margin-top: 7 * $_l__gap-unit;
         }
 
@@ -106,6 +98,7 @@
 
         .reviews-item {
             width: 336px;
+            @include reviews-item__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);
         }
 
         .link-wrapper {
