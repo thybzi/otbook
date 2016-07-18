@@ -131,23 +131,37 @@ body {
     color: #232222; }
 
 .download-block {
-  margin-top: 16px;
   color: #000;
-  font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
-  font-size: 16px;
-  line-height: 24px; }
+  font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif; }
 
 .download-block a {
-  opacity: 0.8; }
-  .download-block a {
-    text-decoration: underline;
-    -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
-    -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
-    text-decoration-color: rgba(0, 0, 0, 0.3); }
-  .download-block a:hover {
-    -webkit-text-decoration-color: #000;
-    -moz-text-decoration-color: #000;
-    text-decoration-color: #000; }
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-color: rgba(0, 0, 0, 0.3); }
+
+.download-block a:hover {
+  -webkit-text-decoration-color: #000;
+  -moz-text-decoration-color: #000;
+  text-decoration-color: #000; }
+
+@media screen and (max-width: 599px) {
+  .download-block {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px; } }
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .download-block {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 22px; } }
+
+@media screen and (min-width: 960px) {
+  .download-block {
+    margin-top: 56px;
+    font-size: 16px;
+    line-height: 24px; } }
 
 .footer {
   height: 48px;
