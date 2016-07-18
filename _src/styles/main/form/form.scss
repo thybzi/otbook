@@ -137,10 +137,6 @@
         $item-gap-y: 2 * $_l__gap-unit;
 
         & {
-            margin-top: 3 * $_l__gap-unit;
-        }
-
-        & + & {
             margin-top: 4 * $_l__gap-unit;
         }
 
@@ -173,13 +169,17 @@
 
     @media #{$_l__w1-media} {
         $input-width: 220px;
-        $input-offset-right: 3 * $_l__gap-unit;
+        $input-offset-right: 2 * $_l__gap-unit;
         $input-space-x: $input-width + $input-offset-right;
         $item-gap-y: 3 * $_l__gap-unit;
 
         & {
-            margin-top: 4 * $_l__gap-unit;
+            margin-top: 6 * $_l__gap-unit;
             padding-left: $input-space-x;
+        }
+
+        & + & {
+            margin-top: 40px;
         }
 
         h1 {
@@ -207,25 +207,21 @@
             max-width: $form__w1-textarea-width-max;
 
             textarea {
-                margin-bottom: $item-gap-y;
+                margin-bottom: 2 * $_l__gap-unit;
             }
         }
     }
 
 
     @media #{$_l__w2-media} {
-        $input-width: 306px;
-        $input-offset-right: 4 * $_l__gap-unit;
+        $input-width: 224px;
+        $input-offset-right: 3 * $_l__gap-unit;
         $input-space-x: $input-width + $input-offset-right;
-        $item-gap-y: 4 * $_l__gap-unit;
+        $item-gap-y: 3 * $_l__gap-unit;
 
         & {
             margin-top: 6 * $_l__gap-unit;
             padding-left: $input-space-x;
-        }
-
-        & + & {
-            margin-top: 9 * $_l__gap-unit;
         }
 
         h1 {
@@ -253,7 +249,7 @@
             width: $form__w2-textarea-width;
 
             textarea {
-                margin-bottom: 3 * $_l__gap-unit;
+                margin-bottom: 2 * $_l__gap-unit;
             }
         }
     }
