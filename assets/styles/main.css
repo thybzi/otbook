@@ -720,8 +720,16 @@ body {
     color: #000;
     font-size: 16px;
     line-height: 24px;
-    opacity: 0.8;
-    text-decoration: underline; }
+    opacity: 0.8; }
+    .page-title a {
+      text-decoration: underline;
+      -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
+      -moz-text-decoration-color: rgba(0, 0, 0, 0.3);
+      text-decoration-color: rgba(0, 0, 0, 0.3); }
+    .page-title a:hover {
+      -webkit-text-decoration-color: #000;
+      -moz-text-decoration-color: #000;
+      text-decoration-color: #000; }
   @media screen and (max-width: 599px) {
     .page-title {
       margin-bottom: 16px; }

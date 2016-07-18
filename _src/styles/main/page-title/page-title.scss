@@ -13,13 +13,15 @@
     }
 
     a {
+        $link-color: $_c__black;
+
         position: relative;
         top: 0.5 * $_l__gap-unit;
-        color: $_c__black;
+        color: $link-color;
         font-size: 16px;
         line-height: 24px;
         opacity: 0.8;
-        text-decoration: underline;
+        @include _t__link-underline-opacity($link-color);
     }
 
     @media #{$_l__w0-media} {
