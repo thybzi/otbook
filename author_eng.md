@@ -1,6 +1,6 @@
 ---
 title: About the person
-permalink: /author_en/
+permalink: /author_eng/
 nav_item: author
 layout: person
 link_url: /author/

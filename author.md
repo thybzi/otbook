@@ -3,7 +3,7 @@ title: Об авторе
 permalink: /author/
 nav_item: author
 layout: person
-link_url: /author_en/
+link_url: /author_eng/
 link_title: About the person
 signature_line1: Ваш
 signature_line2: Олег Туманов
