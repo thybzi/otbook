@@ -110,9 +110,12 @@ body {
 
 .button {
   display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 128px;
   border: solid 1px;
   border-radius: 6px;
-  padding: 12px 20px;
+  padding: 12px 16px;
   font-size: 17px;
   line-height: 20px;
   cursor: pointer; }

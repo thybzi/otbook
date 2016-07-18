@@ -2,6 +2,8 @@
 
 .button {
     display: inline-block;
+    box-sizing: border-box;
+    min-width: $button__width-min;
     border: solid $button__stroke-size;
     border-radius: $button__rounding;
     padding: $button__pad-y $button__pad-x;

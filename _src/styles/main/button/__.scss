@@ -1,9 +1,10 @@
 @import '../_base/__';
 
+$button__width-min: 128px;
 $button__font-size: 17px;
 $button__line-height: 20px;
-$button__pad-x: 20px;
-$button__pad-y: 12px;
+$button__pad-x: 2 * $_l__gap-unit;
+$button__pad-y: 1.5 * $_l__gap-unit;
 $button__stroke-size: 1px;
 $button__rounding: 6px;
 
