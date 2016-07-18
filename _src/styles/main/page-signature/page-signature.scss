@@ -1,4 +1,5 @@
 @import '__';
+@import '../page-text/__';
 
 .page-signature {
 
@@ -16,17 +17,17 @@
 
 
     @media #{$_l__w0-media} {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: $page-text__w0-font-size;
+        line-height: $page-text__w0-line-height;
     }
 
     @media #{$_l__w1-media} {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: $page-text__w1-font-size;
+        line-height: $page-text__w1-line-height;
     }
 
     @media #{$_l__w2-media} {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: $page-text__w2-font-size;
+        line-height: $page-text__w2-line-height;
     }
 }
