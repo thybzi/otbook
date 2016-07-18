@@ -617,7 +617,7 @@ body {
   .page-body {
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 32px;
+    padding-top: 24px;
     padding-bottom: 64px; } }
 
 @media screen and (min-width: 960px) {
@@ -625,7 +625,7 @@ body {
     width: 928px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
+    padding-top: 64px;
     padding-bottom: 116px; } }
 
 .page-signature {

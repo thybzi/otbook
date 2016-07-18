@@ -12,7 +12,7 @@
     @media #{$_l__w1-media} {
         padding-left: $_l__w1-canvas-offset-x;
         padding-right: $_l__w1-canvas-offset-x;
-        padding-top: 4 * $_l__gap-unit;
+        padding-top: 3 * $_l__gap-unit;
         padding-bottom: 8 * $_l__gap-unit;
     }
 
@@ -20,7 +20,7 @@
         width: $_l__w2-canvas-width;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 5 * $_l__gap-unit;
+        padding-top: 8 * $_l__gap-unit;
         padding-bottom: 116px;
     }
 }
