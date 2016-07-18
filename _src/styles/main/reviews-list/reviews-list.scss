@@ -16,6 +16,7 @@
 
 
     @media #{$_l__w0-media} {
+        margin-bottom: 6 * $_l__gap-unit;
         padding-top: $_l__gap-unit;
 
         .reviews-item {
@@ -33,6 +34,7 @@
     }
 
     @media #{$_l__w1-media} {
+        margin-bottom: 6 * $_l__gap-unit;
         padding-top: $_l__gap-unit;
 
         .reviews-item {
@@ -50,6 +52,7 @@
     }
 
     @media #{$_l__w2-media} {
+        margin-bottom: 12 * $_l__gap-unit;
 
         .reviews-item {
             @include reviews-list__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);

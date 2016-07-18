@@ -1043,6 +1043,7 @@ body {
 
 @media screen and (max-width: 599px) {
   .reviews-list {
+    margin-bottom: 48px;
     padding-top: 8px; }
     .reviews-list .reviews-item {
       min-height: 70px; }
@@ -1058,6 +1059,7 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .reviews-list {
+    margin-bottom: 48px;
     padding-top: 8px; }
     .reviews-list .reviews-item {
       padding-left: 112px; }
@@ -1074,16 +1076,18 @@ body {
         margin-top: 48px; } }
 
 @media screen and (min-width: 960px) {
-  .reviews-list .reviews-item {
-    padding-left: 112px; }
+  .reviews-list {
+    margin-bottom: 96px; }
     .reviews-list .reviews-item {
-      min-height: 96px; }
-    .reviews-list .reviews-item .image {
-      position: absolute;
-      left: 0;
-      top: 0; }
-    .reviews-list .reviews-item .text {
-      font-size: 16px;
-      line-height: 24px; }
-    .reviews-list .reviews-item + .reviews-item {
-      margin-top: 64px; } }
+      padding-left: 112px; }
+      .reviews-list .reviews-item {
+        min-height: 96px; }
+      .reviews-list .reviews-item .image {
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .reviews-list .reviews-item .text {
+        font-size: 16px;
+        line-height: 24px; }
+      .reviews-list .reviews-item + .reviews-item {
+        margin-top: 64px; } }
