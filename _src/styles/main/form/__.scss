@@ -1,4 +1,67 @@
 @import '../_base/__';
 
+$form__w0-input-width: 220px;
+$form__w1-input-width: $form__w0-input-width;
+$form__w2-input-width: 224px;
+
 $form__w2-textarea-width: 456px;
 $form__w1-textarea-width-max: $form__w2-textarea-width;
+
+
+//**
+//* Apply sizing and layout type to form
+//* @param {number} input-width Width of inputs block (and inputs inside it)
+//* @param {number|null} input-offset-right Creates inputs column with given offset (no column created if null given)
+//* @param {number} item-gap-y Vertical gap between form elements
+//* @param {number=item-gap-y} [button-offset-top] Top offset for button, if different from item-gap-y
+//*/
+@mixin form__sizing($input-width, $input-offset-right, $item-gap-y, $button-offset-top: $item-gap-y) {
+    $has-columns: type-of($input-offset-right) == 'number';
+
+    @if ($has-columns) {
+        $input-space-x: $input-width + $input-offset-right;
+
+        & {
+            padding-left: $input-space-x;
+        }
+
+        h1 {
+            margin-left: -$input-space-x;
+        }
+
+        .inputs-block {
+            position: absolute;
+            left: 0;
+        }
+    }
+    @else {
+
+        .inputs-block {
+            margin-bottom: $item-gap-y;
+        }
+    }
+
+    h1 {
+        margin-bottom: $item-gap-y;
+    }
+
+    .inputs-block {
+        width: $input-width;
+
+        .input,
+        .file-input {
+
+            & + .input,
+            & + .file-input {
+                margin-top: $item-gap-y;
+            }
+        }
+    }
+
+    .textarea-block {
+
+        textarea {
+            margin-bottom: $button-offset-top;
+        }
+    }
+}

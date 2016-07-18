@@ -133,120 +133,50 @@
 
 
     @media #{$_l__w0-media} {
-        $input-width: 220px;
-        $item-gap-y: 2 * $_l__gap-unit;
 
         & {
             margin-top: 4 * $_l__gap-unit;
+            @include form__sizing($form__w0-input-width, null, 2 * $_l__gap-unit);
         }
 
         h1 {
             font-size: 20px;
             line-height: 32px;
-            margin-bottom: $item-gap-y;
-        }
-
-        .inputs-block {
-            margin-bottom: $item-gap-y;
-
-            .input,
-            .file-input {
-                width: $input-width;
-
-                & + * {
-                    margin-top: $item-gap-y;
-                }
-            }
-        }
-
-        .textarea-block {
-
-            textarea {
-                margin-bottom: $item-gap-y;
-            }
         }
     }
 
     @media #{$_l__w1-media} {
-        $input-width: 220px;
-        $input-offset-right: 2 * $_l__gap-unit;
-        $input-space-x: $input-width + $input-offset-right;
-        $item-gap-y: 3 * $_l__gap-unit;
 
         & {
             margin-top: 6 * $_l__gap-unit;
-            padding-left: $input-space-x;
+            @include form__sizing($form__w1-input-width, 2 * $_l__gap-unit, 3 * $_l__gap-unit, 2 * $_l__gap-unit);
         }
 
         h1 {
-            margin-left: -$input-space-x;
             font-size: 22px;
             line-height: 28px;
-            margin-bottom: $item-gap-y;
-        }
-
-        .inputs-block {
-            position: absolute;
-            left: 0;
-            width: $input-width;
-
-            .input,
-            .file-input {
-
-                & + * {
-                    margin-top: $item-gap-y;
-                }
-            }
         }
 
         .textarea-block {
             max-width: $form__w1-textarea-width-max;
-
-            textarea {
-                margin-bottom: 2 * $_l__gap-unit;
-            }
         }
     }
 
 
     @media #{$_l__w2-media} {
-        $input-width: 224px;
-        $input-offset-right: 3 * $_l__gap-unit;
-        $input-space-x: $input-width + $input-offset-right;
-        $item-gap-y: 3 * $_l__gap-unit;
 
         & {
             margin-top: 6 * $_l__gap-unit;
-            padding-left: $input-space-x;
+            @include form__sizing($form__w2-input-width, 3 * $_l__gap-unit, 3 * $_l__gap-unit, 2 * $_l__gap-unit);
         }
 
         h1 {
-            margin-left: -$input-space-x;
             font-size: 28px;
             line-height: 32px;
-            margin-bottom: $item-gap-y;
-        }
-
-        .inputs-block {
-            position: absolute;
-            left: 0;
-            width: $input-width;
-
-            .input,
-            .file-input {
-
-                & + * {
-                    margin-top: $item-gap-y;
-                }
-            }
         }
 
         .textarea-block {
             width: $form__w2-textarea-width;
-
-            textarea {
-                margin-bottom: 2 * $_l__gap-unit;
-            }
         }
     }
 }

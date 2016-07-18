@@ -270,60 +270,74 @@ body {
   @media screen and (max-width: 599px) {
     .form {
       margin-top: 32px; }
+      .form .inputs-block {
+        margin-bottom: 16px; }
+      .form h1 {
+        margin-bottom: 16px; }
+      .form .inputs-block {
+        width: 220px; }
+        .form .inputs-block .input + .input,
+        .form .inputs-block .input + .file-input,
+        .form .inputs-block .file-input + .input,
+        .form .inputs-block .file-input + .file-input {
+          margin-top: 16px; }
+      .form .textarea-block textarea {
+        margin-bottom: 16px; }
     .form h1 {
       font-size: 20px;
-      line-height: 32px;
-      margin-bottom: 16px; }
-    .form .inputs-block {
-      margin-bottom: 16px; }
-      .form .inputs-block .input,
-      .form .inputs-block .file-input {
-        width: 220px; }
-        .form .inputs-block .input + *,
-        .form .inputs-block .file-input + * {
-          margin-top: 16px; }
-    .form .textarea-block textarea {
-      margin-bottom: 16px; } }
+      line-height: 32px; } }
   @media screen and (min-width: 600px) and (max-width: 959px) {
     .form {
-      margin-top: 48px;
-      padding-left: 236px; }
-    .form h1 {
-      margin-left: -236px;
-      font-size: 22px;
-      line-height: 28px;
-      margin-bottom: 24px; }
-    .form .inputs-block {
-      position: absolute;
-      left: 0;
-      width: 220px; }
-      .form .inputs-block .input + *,
-      .form .inputs-block .file-input + * {
-        margin-top: 24px; }
-    .form .textarea-block {
-      max-width: 456px; }
+      margin-top: 48px; }
+      .form {
+        padding-left: 236px; }
+      .form h1 {
+        margin-left: -236px; }
+      .form .inputs-block {
+        position: absolute;
+        left: 0; }
+      .form h1 {
+        margin-bottom: 24px; }
+      .form .inputs-block {
+        width: 220px; }
+        .form .inputs-block .input + .input,
+        .form .inputs-block .input + .file-input,
+        .form .inputs-block .file-input + .input,
+        .form .inputs-block .file-input + .file-input {
+          margin-top: 24px; }
       .form .textarea-block textarea {
-        margin-bottom: 16px; } }
+        margin-bottom: 16px; }
+    .form h1 {
+      font-size: 22px;
+      line-height: 28px; }
+    .form .textarea-block {
+      max-width: 456px; } }
   @media screen and (min-width: 960px) {
     .form {
-      margin-top: 48px;
-      padding-left: 248px; }
-    .form h1 {
-      margin-left: -248px;
-      font-size: 28px;
-      line-height: 32px;
-      margin-bottom: 24px; }
-    .form .inputs-block {
-      position: absolute;
-      left: 0;
-      width: 224px; }
-      .form .inputs-block .input + *,
-      .form .inputs-block .file-input + * {
-        margin-top: 24px; }
-    .form .textarea-block {
-      width: 456px; }
+      margin-top: 48px; }
+      .form {
+        padding-left: 248px; }
+      .form h1 {
+        margin-left: -248px; }
+      .form .inputs-block {
+        position: absolute;
+        left: 0; }
+      .form h1 {
+        margin-bottom: 24px; }
+      .form .inputs-block {
+        width: 224px; }
+        .form .inputs-block .input + .input,
+        .form .inputs-block .input + .file-input,
+        .form .inputs-block .file-input + .input,
+        .form .inputs-block .file-input + .file-input {
+          margin-top: 24px; }
       .form .textarea-block textarea {
-        margin-bottom: 16px; } }
+        margin-bottom: 16px; }
+    .form h1 {
+      font-size: 28px;
+      line-height: 32px; }
+    .form .textarea-block {
+      width: 456px; } }
 
 .header {
   background-color: #000; }
