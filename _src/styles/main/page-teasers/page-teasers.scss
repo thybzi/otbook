@@ -14,6 +14,10 @@
         h1 {
             color: $_c__gray2;
             font-family: $_f__alternate;
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
 
         div {

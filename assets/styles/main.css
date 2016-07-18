@@ -758,6 +758,8 @@ body {
   .page-teasers article h1 {
     color: #292929;
     font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif; }
+    .page-teasers article h1 a:hover {
+      text-decoration: underline; }
   .page-teasers article div {
     color: #474747;
     font-size: 14px;
