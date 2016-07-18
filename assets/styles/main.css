@@ -288,8 +288,10 @@ body {
       .form .inputs-block .input + *,
       .form .inputs-block .file-input + * {
         margin-top: 24px; }
-    .form .textarea-block textarea {
-      margin-bottom: 24px; } }
+    .form .textarea-block {
+      max-width: 456px; }
+      .form .textarea-block textarea {
+        margin-bottom: 24px; } }
   @media screen and (min-width: 960px) {
     .form {
       margin-top: 48px;
@@ -308,8 +310,10 @@ body {
       .form .inputs-block .input + *,
       .form .inputs-block .file-input + * {
         margin-top: 32px; }
-    .form .textarea-block textarea {
-      margin-bottom: 24px; } }
+    .form .textarea-block {
+      width: 456px; }
+      .form .textarea-block textarea {
+        margin-bottom: 24px; } }
 
 .header {
   background-color: #000; }
