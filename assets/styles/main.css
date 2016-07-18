@@ -636,9 +636,9 @@ body {
   margin-top: 1em; }
 
 .page-text ul {
-  padding-left: 3em; }
+  padding-left: 2em; }
   .page-text ul li {
-    list-style-type: circle; }
+    list-style-type: disc; }
 
 .page-text a {
   text-decoration: underline;
