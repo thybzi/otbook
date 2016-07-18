@@ -450,7 +450,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/header/oleg-tumanov.png) 50% 100% no-repeat;
+    background: url(../images/header/oleg-tumanov.jpg) 50% 100% no-repeat;
     background-size: auto 100%; }
 
 .header.intro .header-inner::before {
@@ -507,7 +507,7 @@ body {
       margin-right: 0; } }
 
 .header.person {
-  background-image: url(../images/header/oleg-tumanov.png);
+  background-image: url(../images/header/oleg-tumanov.jpg);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: auto 100%; }
@@ -527,7 +527,7 @@ body {
 .header.book::after {
   content: '';
   display: block;
-  background: #f9f9f9 url(../images/header/book-open.png) 50% 0 no-repeat;
+  background: #f9f9f9 url(../images/header/book-open.jpg) 50% 0 no-repeat;
   background-size: auto 100%; }
   @media screen and (max-width: 599px) {
     .header.book::after {
