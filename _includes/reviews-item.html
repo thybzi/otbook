@@ -2,7 +2,7 @@
     {% assign item = include.item %}
     {% assign image_exts = 'png|jpg|gif' | split:'|' %}
     {% if image_exts contains item.image %}
-        {% assign image = item.id | replace_first:'/' | append:'.' | append:item.image %}
+        {% assign image = item.slug | append:'.' | append:item.image %}
     {% elsif item.image %}
         {% assign image = item.image %}
     {% else %}
