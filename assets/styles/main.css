@@ -824,7 +824,7 @@ body {
       min-height: 175px;
       margin-right: auto;
       margin-top: 16px;
-      margin-bottom: 16px; }
+      margin-bottom: 24px; }
     .purchase-block.dynamic {
       display: none; }
     .purchase-block .book-front {
@@ -840,7 +840,7 @@ body {
       .purchase-block .sellers h1 {
         margin-bottom: 16px; }
       .purchase-block .sellers ul li + li {
-        margin-top: 16px; } }
+        margin-top: 8px; } }
   @media screen and (min-width: 600px) and (max-width: 959px) {
     .purchase-block {
       float: right;
@@ -862,17 +862,17 @@ body {
   @media screen and (min-width: 960px) {
     .purchase-block {
       float: right;
-      width: 277px;
-      margin-left: 38px;
+      width: 265px;
+      margin-left: 32px;
       margin-top: -80px;
-      margin-bottom: 38px; }
+      margin-bottom: 32px; }
     .purchase-block .book-front {
-      height: 360px; }
+      height: 344px; }
     .purchase-block .book-back {
       height: 275px; }
     .purchase-block .sellers {
-      margin-top: 36px;
-      margin-bottom: 52px; }
+      margin-top: 32px;
+      margin-bottom: 48px; }
       .purchase-block .sellers h1 {
         margin-bottom: 40px; }
       .purchase-block .sellers ul li + li {

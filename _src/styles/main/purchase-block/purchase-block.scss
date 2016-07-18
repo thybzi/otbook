@@ -40,11 +40,11 @@
         $book-front-height: 175px;
 
         & {
-            width: 288px;
+            width: $_l__w0-min - (2 * $_l__w0-canvas-offset-x);
             min-height: $book-front-height;
             margin-right: auto;
             margin-top: 2 * $_l__gap-unit;
-            margin-bottom: 2 * $_l__gap-unit;
+            margin-bottom: 3 * $_l__gap-unit;
         }
 
         &.dynamic {
@@ -71,7 +71,7 @@
             }
 
             ul li + li {
-                margin-top: 2 * $_l__gap-unit;
+                margin-top: $_l__gap-unit;
             }
         }
     }
@@ -114,14 +114,14 @@
 
         & {
             float: right;
-            width: 277px;
-            margin-left: 38px;
+            width: 265px;
+            margin-left: 4 * $_l__gap-unit;
             margin-top: -($page-title__w2-line-height + $page-title__w2-offset-bottom);
-            margin-bottom: 38px;
+            margin-bottom: 4 * $_l__gap-unit;
         }
 
         .book-front {
-            height: 360px;
+            height: 344px;
         }
 
         .book-back {
@@ -129,8 +129,8 @@
         }
 
         .sellers {
-            margin-top: 36px;
-            margin-bottom: 52px;
+            margin-top: 4 * $_l__gap-unit;
+            margin-bottom: 6 * $_l__gap-unit;
 
             h1 {
                 margin-bottom: 40px;
