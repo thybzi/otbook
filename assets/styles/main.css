@@ -532,16 +532,18 @@ body {
   font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif; }
 
 .intro-block article {
-  color: #9c9c9c;
-  opacity: 0.8; }
+  color: rgba(255, 255, 255, 0.7); }
   .intro-block article q::before {
     content: '«'; }
   .intro-block article q::after {
     content: '»'; }
   .intro-block article a {
-    color: #c7c7cc;
+    color: #fff;
+    opacity: 0.9;
     text-decoration: underline;
     white-space: nowrap; }
+    .intro-block article a:hover {
+      opacity: 1; }
 
 @media screen and (max-width: 599px) {
   .intro-block h1 {

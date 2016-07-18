@@ -8,8 +8,7 @@
     }
 
     article {
-        color: $_c__gray4;
-        opacity: 0.8;
+        color: rgba($_c__white, 0.7);
 
         q {
 
@@ -23,9 +22,14 @@
         }
 
         a {
-            color: $_c__gray5;
+            color: $_c__white;
+            opacity: 0.9;
             text-decoration: underline;
             white-space: nowrap;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
