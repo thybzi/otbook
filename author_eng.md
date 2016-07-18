@@ -3,6 +3,7 @@ title: About the person
 permalink: /author_eng/
 nav_item: author
 layout: person
+lang: en
 link_url: /author/
 link_title: Об авторе
 signature_line1: Yours,
