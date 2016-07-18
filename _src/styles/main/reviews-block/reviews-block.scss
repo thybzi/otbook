@@ -57,7 +57,7 @@
         }
 
         .reviews-item {
-            @include reviews-item__image-position($reviews-item__w0-image-size, $_l__gap-unit);
+            @include reviews-item__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
         }
 
         .link-wrapper {

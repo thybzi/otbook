@@ -966,13 +966,11 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .reviews-block .reviews-item {
-    padding-left: 78px; }
-    .reviews-block .reviews-item {
-      min-height: 70px; }
-    .reviews-block .reviews-item .image {
-      position: absolute;
-      left: 0;
-      top: 0; }
+    min-height: 70px; }
+  .reviews-block .reviews-item .image {
+    position: relative;
+    float: left;
+    margin-right: 8px; }
   .reviews-block .link-wrapper {
     margin-top: 24px; } }
 
