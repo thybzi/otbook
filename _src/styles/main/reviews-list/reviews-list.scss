@@ -1,5 +1,6 @@
 @import '__';
 @import '../reviews-item/__';
+@import '../page-text/__';
 
 .reviews-list {
     $text-color: $_c__black;
@@ -21,8 +22,8 @@
             @include reviews-list__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
 
             .text {
-                font-size: 14px;
-                line-height: 20px;
+                font-size: $page-text__w0-font-size;
+                line-height: $page-text__w0-line-height;
             }
 
             & + .reviews-item {
@@ -38,8 +39,8 @@
             @include reviews-list__image-position($reviews-item__w1-image-size, 2 * $_l__gap-unit);
 
             .text {
-                font-size: 15px;
-                line-height: 22px;
+                font-size: $page-text__w1-font-size;
+                line-height: $page-text__w1-line-height;
             }
 
             & + .reviews-item {
@@ -54,8 +55,8 @@
             @include reviews-list__image-position($reviews-item__w2-image-size, 2 * $_l__gap-unit);
 
             .text {
-                font-size: 16px;
-                line-height: 24px;
+                font-size: $page-text__w2-font-size;
+                line-height: $page-text__w2-line-height;
             }
 
             & + .reviews-item {
