@@ -580,8 +580,8 @@ body {
 
 @media screen and (max-width: 599px) {
   .page-body {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 24px;
     padding-bottom: 48px; } }
 
@@ -918,9 +918,9 @@ body {
 
 @media screen and (max-width: 599px) {
   .reviews-block {
-    margin-left: -8px;
-    margin-right: -8px;
-    padding: 24px 8px; }
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 24px 16px; }
   .reviews-block .reviews-item {
     min-height: 70px;
     padding-left: 78px; }
