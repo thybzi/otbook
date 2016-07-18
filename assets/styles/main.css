@@ -288,8 +288,6 @@ body {
     .form {
       margin-top: 48px;
       padding-left: 236px; }
-    .form + .form {
-      margin-top: 40px; }
     .form h1 {
       margin-left: -236px;
       font-size: 22px;
