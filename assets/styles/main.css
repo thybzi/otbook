@@ -764,10 +764,6 @@ body {
     line-height: 20px; }
   .page-teasers article .button {
     display: table; }
-  .page-teasers article a:hover h1,
-  .page-teasers article a:hover div,
-  .page-teasers article a:hover .button {
-    text-decoration: underline; }
 
 @media screen and (max-width: 599px) {
   .page-teasers {
