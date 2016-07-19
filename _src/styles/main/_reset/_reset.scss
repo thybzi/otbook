@@ -32,6 +32,10 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
     text-decoration: none;
 }
 
+main {
+    display: block; // MSIE, Android Browser
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
