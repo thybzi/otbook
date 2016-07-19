@@ -5,7 +5,7 @@
     position: relative;
     clear: both;
 
-    h1 {
+    .form-title {
         font-family: $_f__alternate;
         color: $_c__gray2;
     }
@@ -139,7 +139,7 @@
             @include form__sizing($form__w0-input-width, null, 2 * $_l__gap-unit);
         }
 
-        h1 {
+        .form-title {
             font-size: 20px;
             line-height: 32px;
         }
@@ -152,7 +152,7 @@
             @include form__sizing($form__w1-input-width, 2 * $_l__gap-unit, 3 * $_l__gap-unit, 2 * $_l__gap-unit);
         }
 
-        h1 {
+        .form-title {
             font-size: 22px;
             line-height: 28px;
         }
@@ -170,7 +170,7 @@
             @include form__sizing($form__w2-input-width, 3 * $_l__gap-unit, 3 * $_l__gap-unit, 2 * $_l__gap-unit);
         }
 
-        h1 {
+        .form-title {
             font-size: 28px;
             line-height: 32px;
         }

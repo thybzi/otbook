@@ -180,7 +180,7 @@ body {
 .form {
   position: relative;
   clear: both; }
-  .form h1 {
+  .form .form-title {
     font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif;
     color: #292929; }
   .form .input,
@@ -272,7 +272,7 @@ body {
       margin-top: 32px; }
       .form .inputs-block {
         margin-bottom: 16px; }
-      .form h1 {
+      .form .form-title {
         margin-bottom: 16px; }
       .form .inputs-block {
         width: 220px; }
@@ -283,7 +283,7 @@ body {
           margin-top: 16px; }
       .form .textarea-block textarea {
         margin-bottom: 16px; }
-    .form h1 {
+    .form .form-title {
       font-size: 20px;
       line-height: 32px; } }
   @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -291,12 +291,12 @@ body {
       margin-top: 48px; }
       .form {
         padding-left: 236px; }
-      .form h1 {
+      .form .form-title {
         margin-left: -236px; }
       .form .inputs-block {
         position: absolute;
         left: 0; }
-      .form h1 {
+      .form .form-title {
         margin-bottom: 24px; }
       .form .inputs-block {
         width: 220px; }
@@ -307,7 +307,7 @@ body {
           margin-top: 24px; }
       .form .textarea-block textarea {
         margin-bottom: 16px; }
-    .form h1 {
+    .form .form-title {
       font-size: 22px;
       line-height: 28px; }
     .form .textarea-block {
@@ -317,12 +317,12 @@ body {
       margin-top: 48px; }
       .form {
         padding-left: 248px; }
-      .form h1 {
+      .form .form-title {
         margin-left: -248px; }
       .form .inputs-block {
         position: absolute;
         left: 0; }
-      .form h1 {
+      .form .form-title {
         margin-bottom: 24px; }
       .form .inputs-block {
         width: 224px; }
@@ -333,7 +333,7 @@ body {
           margin-top: 24px; }
       .form .textarea-block textarea {
         margin-bottom: 16px; }
-    .form h1 {
+    .form .form-title {
       font-size: 28px;
       line-height: 32px; }
     .form .textarea-block {
@@ -755,10 +755,10 @@ body {
     position: absolute;
     left: 0;
     top: 0; }
-  .page-teasers article h1 {
+  .page-teasers article .item-title {
     color: #292929;
     font-family: "PT Serif", "Times New Roman", Times, FreeSerif, serif; }
-    .page-teasers article h1 a:hover {
+    .page-teasers article .item-title a:hover {
       text-decoration: underline; }
   .page-teasers article div {
     color: #474747;
@@ -774,7 +774,7 @@ body {
     padding-left: 78px; }
     .page-teasers article img {
       width: 70px; }
-    .page-teasers article h1 {
+    .page-teasers article .item-title {
       font-size: 28px;
       line-height: 32px; }
     .page-teasers article div {
@@ -791,7 +791,7 @@ body {
     padding-left: 176px; }
     .page-teasers article img {
       width: 160px; }
-    .page-teasers article h1 {
+    .page-teasers article .item-title {
       font-size: 36px;
       line-height: 48px; }
     .page-teasers article div {
@@ -817,7 +817,7 @@ body {
     width: 272px; }
     .page-teasers article img {
       width: 160px; }
-    .page-teasers article h1 {
+    .page-teasers article .item-title {
       font-size: 44px;
       line-height: 48px; }
     .page-teasers article div {
@@ -833,7 +833,7 @@ body {
   .purchase-block .book-back img {
     vertical-align: top;
     height: 100%; }
-  .purchase-block .sellers h1 {
+  .purchase-block .sellers .block-title {
     font-size: 14px;
     line-height: 20px; }
   .purchase-block .sellers ul {
@@ -861,7 +861,7 @@ body {
     .purchase-block .sellers {
       display: table;
       margin-left: auto; }
-      .purchase-block .sellers h1 {
+      .purchase-block .sellers .block-title {
         margin-bottom: 16px; }
       .purchase-block .sellers ul li + li {
         margin-top: 8px; } }
@@ -879,7 +879,7 @@ body {
       display: none; }
     .purchase-block .sellers {
       margin-top: 14px; }
-      .purchase-block .sellers h1 {
+      .purchase-block .sellers .block-title {
         margin-bottom: 28px; }
       .purchase-block .sellers ul li + li {
         margin-top: 24px; } }
@@ -897,7 +897,7 @@ body {
     .purchase-block .sellers {
       margin-top: 32px;
       margin-bottom: 48px; }
-      .purchase-block .sellers h1 {
+      .purchase-block .sellers .block-title {
         margin-bottom: 40px; }
       .purchase-block .sellers ul li + li {
         margin-top: 24px; } }

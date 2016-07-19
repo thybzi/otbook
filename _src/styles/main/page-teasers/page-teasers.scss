@@ -11,7 +11,7 @@
             top: 0;
         }
 
-        h1 {
+        .item-title {
             color: $_c__gray2;
             font-family: $_f__alternate;
 
@@ -48,7 +48,7 @@
                 width: $image-width;
             }
 
-            h1 {
+            .item-title {
                 font-size: 28px;
                 line-height: 32px;
             }
@@ -83,7 +83,7 @@
                 width: $image-width;
             }
 
-            h1 {
+            .item-title {
                 font-size: 36px;
                 line-height: 48px;
             }
@@ -121,7 +121,7 @@
                 width: $image-width;
             }
 
-            h1 {
+            .item-title {
                 font-size: 44px;
                 line-height: 48px;
             }

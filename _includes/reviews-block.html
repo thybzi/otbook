@@ -1,7 +1,7 @@
 {% if site.posts.size > 0 %}
 {% assign limit = 2 %}
 <section class="reviews-block">
-    <h1 class="block-title">Последние отзывы</h1>
+    <h2 class="block-title">Последние отзывы</h2>
     <div class="items-list">
     {% for item in site.posts limit:limit %}
         {% include reviews-item.html item=item %}

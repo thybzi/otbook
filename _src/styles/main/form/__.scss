@@ -25,7 +25,7 @@ $form__w1-textarea-width-max: $form__w2-textarea-width;
             padding-left: $input-space-x;
         }
 
-        h1 {
+        .form-title {
             margin-left: -$input-space-x;
         }
 
@@ -41,7 +41,7 @@ $form__w1-textarea-width-max: $form__w2-textarea-width;
         }
     }
 
-    h1 {
+    .form-title {
         margin-bottom: $item-gap-y;
     }
 

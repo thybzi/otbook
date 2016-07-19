@@ -17,7 +17,7 @@
 
     .sellers {
 
-        h1 {
+        .block-title {
             font-size: 14px;
             line-height: 20px;
         }
@@ -66,7 +66,7 @@
             display: table;
             margin-left: auto;
 
-            h1 {
+            .block-title {
                 margin-bottom: 2 * $_l__gap-unit;
             }
 
@@ -100,7 +100,7 @@
         .sellers {
             margin-top: 14px;
 
-            h1 {
+            .block-title {
                 margin-bottom: 28px;
             }
 
@@ -132,7 +132,7 @@
             margin-top: 4 * $_l__gap-unit;
             margin-bottom: 6 * $_l__gap-unit;
 
-            h1 {
+            .block-title {
                 margin-bottom: 40px;
             }
 

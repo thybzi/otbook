@@ -6,7 +6,7 @@
     {% assign form_url = form_url | strip %}
 {% endcapture %}
 <form class="form" id="{{ form_id }}" action="{{ form_url }}" method="post" enctype="multipart/form-data">
-    <h1>Оставьте отзыв о книге</h1>
+    <h2 class="form-title">Оставьте отзыв о книге</h2>
     <div class="inputs-block">
         <input type="hidden" name="type" value="{{ communication_type }}">
         {% include form/redirect-to.html form_id=form_id %}
