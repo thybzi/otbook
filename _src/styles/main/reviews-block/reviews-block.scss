@@ -16,10 +16,6 @@
         line-height: 30px;
     }
 
-    .items-list {
-        display: flex;
-    }
-
     .reviews-item {
         position: relative;
 
@@ -52,10 +48,6 @@
             display: none;
         }
 
-        .items-list {
-            flex-wrap: wrap;
-        }
-
         .reviews-item {
             @include reviews-item__image-position($reviews-item__w0-image-size, $_l__gap-unit, false);
         }
@@ -70,10 +62,6 @@
         & {
             margin-top: 6 * $_l__gap-unit;
             @include reviews-block__block-sizing($_l__w1-canvas-offset-x, 4 * $_l__gap-unit, 4 * $_l__gap-unit);
-        }
-
-        .items-list {
-            flex-wrap: wrap;
         }
 
         .reviews-item  {
@@ -93,6 +81,7 @@
         }
 
         .items-list {
+            display: flex;
             justify-content: space-between;
         }
 
