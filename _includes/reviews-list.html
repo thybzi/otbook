@@ -1,7 +1,11 @@
-{% if site.posts.size > 0 %}
 <div class="reviews-list">
+{% if site.posts.size > 0 %}
 {% for item in site.posts limit:limit %}
     {% include reviews-item.html item=item %}
 {% endfor %}
-</div>
+{% else %}
+    <div class="block-text">
+        Отзывов пока нет. Ваш может стать первым!
+    </div>
 {% endif %}
+</div>

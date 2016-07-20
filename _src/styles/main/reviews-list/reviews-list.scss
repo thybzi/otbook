@@ -5,6 +5,11 @@
 .reviews-list {
     $text-color: $_c__black;
 
+    .block-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
     .reviews-item {
         position: relative;
 
