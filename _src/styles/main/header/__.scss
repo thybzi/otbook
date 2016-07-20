@@ -1,1 +1,7 @@
 @import '../_base/__';
+
+$header__hamburger-nav-width-max: 649px;
+$header__classic-nav-width-min: $header__hamburger-nav-width-max + 1;
+
+$header__hamburger-nav-media: 'screen and (max-width: #{$header__hamburger-nav-width-max})';
+$header__classic-nav-media: 'screen and (min-width: #{$header__classic-nav-width-min})';

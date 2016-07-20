@@ -44,12 +44,12 @@
             text-decoration: underline;
         }
 
-        @media #{$_l__w0-media} {
+        @media #{$header__hamburger-nav-media} {
             font-size: 16px;
             right: 0;
         }
 
-        @media #{$_l__w1-w2-media} {
+        @media #{$header__classic-nav-media} {
             font-size: 18px;
             left: 0;
         }
@@ -79,7 +79,7 @@
             }
         }
 
-        @media #{$_l__w0-media} {
+        @media #{$header__hamburger-nav-media} {
             $icon-area-width: 30px;
             $icon-area-height: 29px;
             $icon-width: 22px;
@@ -121,7 +121,7 @@
             }
         }
 
-        @media #{$_l__w1-w2-media} {
+        @media #{$header__classic-nav-media} {
 
             & {
                 position: absolute;

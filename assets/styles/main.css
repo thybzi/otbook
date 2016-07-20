@@ -373,12 +373,12 @@ body {
 .header .logo:hover {
   text-decoration: underline; }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 649px) {
   .header .logo {
     font-size: 16px;
     right: 0; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header .logo {
     font-size: 18px;
     left: 0; } }
@@ -397,7 +397,7 @@ body {
   .header .nav-main li a:hover {
     text-decoration: underline; }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 649px) {
   .header .nav-main {
     position: absolute;
     left: 0;
@@ -424,7 +424,7 @@ body {
   .header .nav-main:not(.expanded) ul {
     display: none; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header .nav-main {
     position: absolute;
     top: 0;
