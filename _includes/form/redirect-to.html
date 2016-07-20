@@ -1,6 +1,8 @@
 {% capture devnull %}
     {% if site.github.url %}
         {% assign root_url = site.github.url %}
+    {% elsif site.hosturl %}
+        {% assign root_url = site.hosturl | append:site.baseurl %}
     {% else %}
         {% assign root_url = 'http://localhost:' | append:site.port | append:site.baseurl %}
     {% endif %}
