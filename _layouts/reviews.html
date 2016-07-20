@@ -5,7 +5,9 @@
 
     <main class="page-body">
         {% include page-title.html %}
-        {% include purchase-block.html dynamic=true %}
+        {% if site.posts.size >= 4 %}
+            {% include purchase-block.html dynamic=true %}
+        {% endif %}
         {% include reviews-list.html %}
         {% include form_review.html %}
         {% include form_contact.html %}
