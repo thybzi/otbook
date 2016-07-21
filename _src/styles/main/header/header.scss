@@ -80,8 +80,8 @@
         }
 
         @media #{$header__hamburger-nav-media} {
-            $icon-area-width: 30px;
-            $icon-area-height: 29px;
+            $icon-area-width: 30px + (2 * $_l__w0-header-pad-x);
+            $icon-area-height: $_l__header-height-base;
             $icon-width: 22px;
             $icon-height: 16px;
 
@@ -108,8 +108,8 @@
 
             .toggle {
                 position: absolute;
-                top: floor(($_l__header-height-base - $icon-area-height) / 2);
-                left: 0;
+                top: 0;
+                left: -$_l__w0-header-pad-x;
                 width: $icon-area-width;
                 height: $icon-area-height;
                 background: url(images/hamburger.svg) 50% 50% no-repeat;

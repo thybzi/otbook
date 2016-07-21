@@ -415,10 +415,10 @@ body {
     margin-top: 24px; }
   .header .nav-main .toggle {
     position: absolute;
-    top: 9px;
-    left: 0;
-    width: 30px;
-    height: 29px;
+    top: 0;
+    left: -16px;
+    width: 62px;
+    height: 48px;
     background: url(../images/header/hamburger.svg) 50% 50% no-repeat;
     background-size: 22px 16px; }
   .header .nav-main:not(.expanded) ul {
