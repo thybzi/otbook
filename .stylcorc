@@ -26,6 +26,13 @@
             "import_extend_source": false,
             "content": "{{IMPORT}} {{QUOTE}}../_base/__{{QUOTE}};",
             "no_virtual": ["content"]
+        },
+        "%": {
+            "filename": "%",
+            "imports": ["."],
+            "import_extend_source": false,
+            "content": null,
+            "no_virtual": false
         }
     }
 }
