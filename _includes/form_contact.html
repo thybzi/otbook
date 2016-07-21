@@ -6,7 +6,7 @@
     {% assign form_url = form_url | strip %}
 {% endcapture %}
 <form class="form" id="{{ form_id }}" action="{{ form_url }}" method="post">
-    <h2 class="form-title">{% include _i18n.html ru='Напишите мне' en='Еmail me' %}</h2>
+    <h2 class="form-title">{% include _i18n.html ru='Напишите мне' en='Send me a message' %}</h2>
     <div class="inputs-block">
         <input type="hidden" name="type" value="{{ communication_type }}">
         {% include form/redirect-to.html form_id=form_id %}
