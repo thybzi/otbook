@@ -1,2 +1,15 @@
+---
+---
+{% capture content %}
+{% if site.hosturl %}
+User-agent: *
+Disallow:
+
+User-agent: Yandex
+Disallow:
+host: {{ site.hosturl | split:'://' | last | replace:'/','' }}
+{% else %}
 User-agent: *
 Disallow: /
+{% endif %}
+{% endcapture %}{{ content | strip }}
