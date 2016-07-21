@@ -1,0 +1,5 @@
+exclude: [gulpfile.js, package.json, node_modules, Gemfile, Gemfile.lock]
+hosturl: http://olegtumanov.com
+baseurl: ""
+show_download_block: true
+form_api_token: 9b71a1e66440b8354b031f791e5c72f4
