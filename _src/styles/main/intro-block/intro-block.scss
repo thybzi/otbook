@@ -8,9 +8,9 @@
     }
 
     article {
-        color: rgba($_c__white, 0.7);
 
         q {
+            color: $_c__gray4;
 
             &::before {
                 content: '«';
