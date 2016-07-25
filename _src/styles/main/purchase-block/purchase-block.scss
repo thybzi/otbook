@@ -3,6 +3,7 @@
 
 .purchase-block {
     position: relative;
+    z-index: $z-purchase-block;
     text-align: center;
     font-family: $_f__common;
 

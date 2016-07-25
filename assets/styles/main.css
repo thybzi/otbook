@@ -831,6 +831,7 @@ body {
 
 .purchase-block {
   position: relative;
+  z-index: 1;
   text-align: center;
   font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif; }
   .purchase-block .book-front img,
