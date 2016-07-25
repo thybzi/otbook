@@ -846,6 +846,7 @@ body {
     .purchase-block .sellers ul li {
       list-style-type: none; }
       .purchase-block .sellers ul li img {
+        max-width: 100%;
         vertical-align: top; }
   @media screen and (max-width: 599px) {
     .purchase-block {
