@@ -19,7 +19,7 @@ Thank you for visiting my site about my philosophical views and my music,
 — It just happened so, but not accidentally.
 
 Everybody is creating his (or her) own world, his environment. Someone does it by making conscious decisions, someone
-is led by others. My choice was well though but it was not quick.
+is led by others. My choice was well thought but it was not quick.
 
 My book is my manifest, having been formed for years of thinking about a philosophical platform of a contemporary man,
 who doesn't want to take anything for granted, but instead who is trying to rethink and consciously adopt the 
