@@ -3,6 +3,8 @@ title: Книга «Выбери себя»
 permalink: /book/
 nav_item: book
 layout: book
+link_url: /book_eng/
+link_title: Book “Choose Yourself”
 ---
 
 Задумывались ли вы над тем, что всего несколько постулатов полностью определяют вашу жизнь, ощущение ее полноты,
