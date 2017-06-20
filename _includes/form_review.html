@@ -1,26 +1,26 @@
 {% capture devnull %}
     {% assign form_id = 'review' %}
     {% assign communication_type = 'Отзыв о книге' %}
-    {% assign success_message = 'Ваш отзыв отправлен. Спасибо!' %}
+    {% capture success_message %}{% include _i18n.html ru='Ваш отзыв отправлен. Спасибо!' en='Your comment sent. Thank you!' %}{% endcapture %}
     {% capture form_url %}{% include form/url.html %}{% endcapture %}
     {% assign form_url = form_url | strip %}
 {% endcapture %}
 <form class="form" id="{{ form_id }}" action="{{ form_url }}" method="post" enctype="multipart/form-data">
-    <h2 class="form-title">Оставьте отзыв о книге</h2>
+    <h2 class="form-title">{% include _i18n.html ru='Оставьте отзыв о книге' en='Leave your comment' %}</h2>
     <div class="inputs-block">
         <input type="hidden" name="type" value="{{ communication_type }}">
         {% include form/redirect-to.html form_id=form_id %}
-        <input class="input" type="text" name="name" placeholder="Ваше имя" required>
-        <input class="input" type="email" name="email" placeholder="Ваш email" required>
+        <input class="input" type="text" name="name" placeholder="{% include _i18n.html ru='Ваше имя' en='Your name' %}" required>
+        <input class="input" type="email" name="email" placeholder="{% include _i18n.html ru='Ваш email' en='Your email' %}" required>
         <span class="file-input">
             <input type="file" name="photo" id="photo" onchange="this.parentNode.classList[this.value ? 'add' : 'remove']('selected')">
-            <label class="button light" for="photo">Добавить фото</label>
+            <label class="button light" for="photo">{% include _i18n.html ru='Добавить фото' en='Add your photo' %}</label>
         </span>
     </div>
     <div class="textarea-block">
-        <textarea class="high" name="text" placeholder="Ваше сообщение" required></textarea>
+        <textarea class="high" name="text" placeholder="{% include _i18n.html ru='Ваше сообщение' en='Your comment' %}" required></textarea>
         <div class="message"></div>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button" type="submit">{% include _i18n.html ru='Отправить' en='Submit' %}</button>
     </div>
     {% include form/handler.html form_id=form_id success_message=success_message %}
 </form>
