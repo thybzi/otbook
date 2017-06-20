@@ -4,7 +4,7 @@
     {% include header.html type='book' nav_item=page.nav_item %}
 
     <main class="page-body">
-        {% include page-title.html %}
+        {% include page-title.html link_url=page.link_url link_title=page.link_title %}
         {% include purchase-block.html %}
         {% include page-text.html %}
         {% include download-block.html %}
