@@ -1,7 +1,7 @@
 {% if site.posts.size > 0 %}
 {% assign limit = 2 %}
 <section class="reviews-block">
-    <h2 class="block-title">Последние отзывы</h2>
+    <h2 class="block-title">{% include _i18n.html ru='Последние отзывы' en='Comments' %}</h2>
     <div class="items-list">
     {% for item in site.posts limit:limit %}
         {% include reviews-item.html item=item %}
@@ -9,7 +9,7 @@
     </div>
     {% if site.posts.size > limit %}
     <div class="link-wrapper">
-        <a href="{{ site.baseurl }}/reviews/">Больше отзывов</a>
+        <a href="{{ site.baseurl }}/reviews/">{% include _i18n.html ru='Больше отзывов' en='More…' %}</a>
     </div>
     {% endif %}
 </section>
